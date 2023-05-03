@@ -1,0 +1,26 @@
+
+h1{
+    color: rgb(42, 165, 46);
+}
+header{
+    background-color: rgb(210, 198, 198);
+}
+main{
+    background-color: blue;
+}
+footer{
+    background-color: orangered;
+}
+.mytext{
+    color: darkturquoise;
+}
+p{
+    font-family:'Courier New',monospace ;
+    border-color: black;
+    
+}
+
+.mytext{
+    border-radius: 2px;
+    background-color: brown;
+}
