@@ -1,0 +1,123 @@
+#login{
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+    background-color: #b3acac70;
+    border-style:ridge ;
+    border-color: black;
+    padding: 0px 44px 5px 10px;
+    /* position: fixed; */
+    
+}
+pre{
+    margin-top: 150px;
+}
+#icon{
+    margin-top: 10px;
+  margin-left: 100px;
+  margin-right: 800px;
+}
+#bound{
+    margin: 80px 500px 70px 500px;
+    background-color: rgba(240, 248, 255, 0.22);
+    border-style:ridge ;
+    padding: 0px 0px 50px 50px;
+    border-radius: 5px;
+
+}
+#password{
+   
+    margin-bottom: 0px;
+    margin-left: 10px;
+    background-color: rgba(189, 186, 186, 0.405);
+    padding: 0px 44px 5px 10px;
+    border-style:ridge ;
+    border-color: black;
+}
+
+#submit{
+    margin-top: 10px;
+    margin-left: 100px;
+    border-style:ridge ;
+}
+#forgot{
+    margin-top: 5px;
+    margin-left: 10px; 
+  
+}
+
+main{
+    position: static;
+    margin-right: 50px;
+}
+#or{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: 115px;
+  
+}
+#button{
+    margin-bottom: 7px;
+    margin-left: 100px;
+
+    border-style:ridge ;
+}
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+.color{
+
+    background-color: black;
+
+    width: 1366px;
+    height: 40px;
+
+}
+.color1{
+    
+    background-color:rgb(226, 225, 225);
+    
+
+    width: 1366px;
+    height: 40px;
+}
+#bound1{
+    margin: 200px 500px 50px 500px;
+    background-color: rgba(240, 248, 255, 0.175);
+    border-style:ridge ;
+    padding: 0px 0px 50px 50px;
+    border-radius: 5px;
+
+}
+#login1{
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 8px;
+    background-color: #b3acac70;
+    border-style:ridge ;
+    border-color: black;
+    padding: 0px 80px 5px 10px;
+     
+}
+.video{
+    position:absolute ;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    position: fixed;
+}
+#resend{
+    
+    background-color: rgb(240, 248, 255);
+    border-style:ridge ;
+
+   
+}
+#back{
+    margin: 0px 10px 10px 0px;
+}
+
+#image{

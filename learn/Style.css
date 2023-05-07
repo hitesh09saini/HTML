@@ -1,0 +1,46 @@
+*{
+    padding: 0 ;
+    margin: 0 ;
+    box-sizing: border-box;
+    font-family: monospace; 
+
+    
+}
+.grand_parent{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(232, 220, 220);
+}
+
+h1{
+    font-size: 4rem;
+    padding: 50px 0;
+    text-align: center;
+    color: rgb(2, 44, 255);
+
+}
+
+p{
+    text-align: center; 
+}
+
+.parents{
+    width: 88vw; height: 60vw; margin: auto;
+    position: relative;
+    bottom: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.child:first-child{
+    background-color: crimson;
+}
+
+.child:last-child{
+    background-color: darkorange;
+}
+.child{
+    width: 200px; height: 200px;
+    background-color: greenyellow;
+    box-shadow: 0 0 20px rgb(0, 0, 0);
+}

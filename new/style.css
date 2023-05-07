@@ -1,0 +1,49 @@
+.red{
+    position: relative;
+    background-color: red;
+   
+}
+.box{
+    height: 100px;
+   width: 100px;
+   box-sizing: border-box;
+}
+
+.green{
+    background-color: rgb(71, 192, 71);
+     position:sticky;
+    margin-top: 10px;
+   
+  
+    
+}
+.yallow{
+    
+    position: relative;
+    background-color: rgb(225, 200, 41);
+    bottom:210px;
+    left: 110px;
+   
+    
+    
+}
+.blue{
+    
+    background-color: rgb(49, 184, 225);
+    
+    padding: 25px 10px 10px 25px;
+    position: fixed;
+    left: 220px;
+    top: 210px;
+     
+}
+.container{
+    width: 500px;
+    height: 500px;
+    margin-top: 100px;
+    margin-left: 100px;
+  background-color: beige;
+}
+.spacer{
+    height: 50vb;
+}
