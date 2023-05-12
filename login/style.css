@@ -9,6 +9,9 @@
     /* position: fixed; */
     
 }
+.flex{
+    display: flex;
+}
 pre{
     margin-top: 150px;
 }

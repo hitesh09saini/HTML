@@ -1,0 +1,41 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+.container{
+    border: 2px solid red;
+    display: grid;
+    
+    height: 600px;
+   
+    grid-template-areas: "hdr hdr hdr hdr"
+                           "sbr main main main"
+                           "sbr main main main"
+                           "ftr ftr ftr ftr" ;  /* fr,repeat */
+}
+.box{
+    border: 2px solid green;
+    padding: 20px;
+
+   
+  
+} 
+
+#box-1{
+    background-color: aqua;
+  
+    grid-area: hdr;
+}
+#box-2{
+  grid-area: sbr;
+}
+
+#box-3{
+   grid-area: main;
+}
+
+#box-4{
+    grid-area: ftr;
+}
