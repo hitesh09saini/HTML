@@ -1,0 +1,53 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-text-color: black;
+    --my-var:rgb(209, 193, 193);
+    --box-color:white;
+}
+
+.dark{
+    
+    --primary-text-color: white;
+    --my-var: rgb(11, 11, 11);
+    --box-color:black;
+
+}
+
+body{
+
+  background-color: var(--box-color);
+}
+.container{
+    padding: 40px;
+    
+}
+
+h1{
+    color: var(--primary-text-color);
+    text-align: center;
+}
+h2{
+    color: var(--primary-text-color);
+}
+p{
+    color: var(--primary-text-color);
+}
+
+.box{
+    
+    padding: 20px;
+    background-color: var(--my-var);
+    margin-top: 30px;
+    border: 1px solid black;
+    border-radius: 20px;
+}
+
+.box h2{
+    margin-bottom: 20px;
+}
+
