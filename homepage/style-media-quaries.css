@@ -1,0 +1,62 @@
+@media screen and (max-width : 991px) {
+  .nav-toggle{
+    display: block;
+    margin-right: 20px;
+  }
+  .nav-links{
+    display: none;
+
+  }
+ 
+  .example-card{
+    width:calc(50%-10px);
+  
+    height: 180px;
+  }
+  .example-area{
+    gap: 20px;
+  }
+  
+  
+  .cta-section{
+    padding: 30px;
+  }
+
+  
+
+}
+
+@media screen and (max-width :767px) {
+    .header-section{
+         flex-direction: column-reverse;
+         
+    }
+    .header-left{
+        max-width: 100vw;
+        text-align: center;
+    }
+    .primary-button{
+        width: 100%;
+    }
+
+    .big-feature-container{
+        flex-direction: column;
+    }
+    .reverse{
+        flex-direction: column-reverse;
+    }
+
+    .footer-container{
+        flex-direction: column;
+        gap: 40px;
+        align-items: center;
+        text-align: center;
+    }
+
+    .link-column{
+       align-items: stretch;
+    }
+
+
+
+}

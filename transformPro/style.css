@@ -1,0 +1,21 @@
+.container{
+    height: 300px;
+    width: 300px;
+    background-color: aquamarine;
+    
+}
+
+.inner{
+    height: 100px;
+    width: 100px;
+    background-color: crimson;
+ 
+   font-size: 3rem;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+  
+   transform: rotate(360deg) translate(40px,40px) scale(1.2) skew(30deg);
+   
+   transform-origin: top;
+}

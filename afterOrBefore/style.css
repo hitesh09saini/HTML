@@ -1,0 +1,22 @@
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 40px;
+}
+
+
+
+.primary-btn:hover{
+ 
+    color: rgba(213, 19, 19, 0.882);
+    background-color: black;
+}
+
+
+.primary-btn:visited{
+    color: rgb(209, 219, 161);
+}
+
+.primary-btn:active{
+    color: black;
+    border: 2px solid rgb(194, 16, 16);
+}
