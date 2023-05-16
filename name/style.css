@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;900&family=Roboto:ital,wght@0,400;0,900;1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bodoni Moda', serif;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   
+    min-height: 100vh;
+    background-color: black;
+}
+
+.wrapper{
+    
+    display: flex;
+}
+
+.wrapper .first-text {
+      
+    font-size: 60px;
+}
+.sec-texts{
+    height: 90px;
+    line-height: 90px;
+    overflow: hidden;
+}
+.sec-texts li {
+    position: relative;
+    top: 0px;
+    font-size: 60px;
+    color: aqua;
+    list-style: none;
+    padding: 0 20px;
+    text-shadow: 0 0  30px #0ef;
+    animation: slide 12s steps(4) infinite, colorful 6s  infinite ;
+
+}
+@keyframes slide {
+    100%{
+        top: -360px;
+       
+    }
+}
+
+@keyframes colorful {
+    
+    100%{
+        filter: hue-rotate(360deg);
+    }
+}
+
+.sec-texts li span{
+    position: relative;
+}
+
+.sec-texts li span::before{
+
+    content: '';
+    position: absolute;
+    width: 400px;
+    height: 90px;
+    left: 0%;
+
+    background: black;
+    border-left: 2px solid #0ef;
+    animation: typing 1.5s steps(10) infinite alternate ;
+}
+
+@keyframes typing {
+    100%{
+        left: 100%;
+        margin: 0 -35px 0 35px;
+    }
+}

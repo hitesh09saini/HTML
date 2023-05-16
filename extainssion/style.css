@@ -1,0 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:wght@400;900&family=Roboto:ital,wght@0,400;0,900;1,500&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+     width: 300px;
+     
+     background-color: black;
+     color:cyan ;
+     font-family: 'Bodoni Moda', serif;
+    
+     
+}
+
+.box
+{
+   margin: 30px 30px;
+   font-size: 22px;
+   display: inner-flex;
+   border: 2px solid red;
+
+}
+p{
+    margin: 10px 10px;
+}
