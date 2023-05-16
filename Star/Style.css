@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+.container{
+  background-color: black;
+  
+   width: 100vw;
+   height: 100vh;
+   /* overflow: hidden; */
+   
+}
+
+.boobles{
+    position: relative;
+    display: flex;
+    
+ 
+}
+.boobles span{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%; 
+    box-shadow: 0 0 0 10px #4fc3dc44,
+     0 0 40px #03a1c4,
+    0 0 100px #4fc3dc ; 
+     margin: 0 4px;
+    animation: star 15s linear infinite;
+    animation-duration: calc(10s/var(--i));
+}
+
+@keyframes star {
+    0%{
+        transform: translateY(100vh) scale(0);
+        filter:hue-rotate(0deg);
+       
+    }
+   
+    100%{
+        transform: scale(1); filter: hue-rotate(360deg);
+        transform: translateY(-10vh);
+       
+    }
+}
+
+
+
+
