@@ -18,7 +18,7 @@
 
 // const result = arr.findIndex(firstneg);
 
-// console.log(result);
+console.log("resul");
 
 
 // arr.map((num)=>{

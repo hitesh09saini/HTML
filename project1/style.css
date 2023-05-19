@@ -1,17 +1,18 @@
 *{
     margin: 0;
     padding: 0;
-
+    box-sizing: border-box;
 }
-
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,700;1,400&display=swap');
 .top-container{
-    width:  100%;
+    width:  100vw;
     height: 100vh;
+    font-family: 'poppins' , sans-serif ;
     
 }
 .banner{
 
-    width: 100%;
+    width: 100vw;
      height: 10vh;
     background-color: white;
 }
@@ -21,23 +22,23 @@
    
     display: flex;
    
-    width:  100%;
+    width:  100vw;
     height: 90vh;
      background-color: rgb(202, 217, 202);
 }
 
 .function{
-   background-image: url(bac.jpg);
-  background-size: 200px;
+    background-image: url(bac.jpg);
+    background-size: 200px;
     margin: 10px;
-    flex-wrap: wrap;
+    cursor: not-allowed;
     width: 90vw;
     height: 87vh;
     background-color: rgb(224, 229, 227);
     gap: 10px;
     display: grid;
     grid-template-columns: repeat(3,1fr);
-  
+    
    
 }
 
@@ -58,16 +59,52 @@
     width: 300px;
     height: 200px;
     background-color: rgb(11, 10, 10);
-    margin: 30px;
+    margin: 20px;
     border-radius: 25px;
-    align-items: center;
+    cursor: pointer;
+    text-align: center;
    
-   
+    color: rgb(237, 210, 7);
+  
 }
-.box img{
-    width: 310px;
-    height: 210px;
-    border-radius: 20px;
+
+
+a{
+    text-decoration: none;
+    display: inline-block;
+     width: 300px;
+     height: 200px;
+}
+h1{
+    position: relative;
+    top: 200px;
+}
+
+
+.img-1{
+    background-image: url(auditor.jpg);
+     background-size: 300px;
+     
+}
+.img-2{
+    background-image: url(bill.jpg);
+     background-size: 300px;
+     
+}
+.img-3{
+    background-image: url(tools.jpg);
+     background-size: 300px;
+     
+}
+.img-4{
+    background-image: url(saving.jpg);
+     background-size: 300px;
+     
+}
+.img-5{
+    background-image: url(tips.jpg);
+     background-size: 300px;
+     
 }
 
 .box:hover{
@@ -78,5 +115,7 @@
 
        
         background-blend-mode: hard-light;
+       
     
 }
+

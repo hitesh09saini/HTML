@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    height: 200vh;
+    width: 100%;
+}
+
+
+.banner{
+
+    height: 10vh;
+    width: 100%;
+    background-color: rgb(167, 15, 15);
+}
