@@ -14,9 +14,10 @@ body{
 }
 
 @keyframes up-down {
+   
     100%{      
       
-      transform: rotate(180deg) skewY(-30deg);
+      transform: rotate(360deg) skewY(-30deg);
       
       }
      }
@@ -29,7 +30,7 @@ body{
    justify-content: center;
    
    align-items: center;
-   animation: up-down 60s  infinite linear ;
+   animation: up-down 60s  infinite alternate ;
    
 }
 
