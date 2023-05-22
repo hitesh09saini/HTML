@@ -24,13 +24,49 @@ body{
    #fe6bab 8%    
    #f527cc 60% 
     #fe6bea 100%);
-
+    
     animation: bounce 3.5s infinite alternate;
     box-shadow:inset 0 0 20px white,
                inset 10px 0 46px #eaf5fc,
                inset -20px -60px 100px  #fde9ea,
                inset  0 50px 140px #fde9ea,
                0 0 90px #fff   ;
+   
+  
+}
+.ear{
+    width: 50px;
+    height: 70px;
+    background-color: #ffffffe3;
+    position: relative;
+    border-radius: 50%;
+    transform: rotateZ(-40deg);
+    display: flex;
+    justify-content:center ;
+    align-items: end;
+    top: -10px;
+    
+}
+
+.iner{
+    position: fixed;
+    width: 30px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #f799c2a3;
+}
+.ear-2{
+    transform: rotateZ(40deg);
+    left: 150px;
+    top: -80px;
+   
+    
+}
+.s{
+    width: 50px;
+    height: 30px;
+    background-color: #fdfeff;
+    border-radius: 0 0 500% 500%;
 
 }
 
@@ -62,3 +98,4 @@ body{
         transform: scale(0.9);
     }
 }
+
