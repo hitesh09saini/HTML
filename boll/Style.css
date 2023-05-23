@@ -21,11 +21,11 @@ body{
     border-radius: 50%;
    background: radial-gradient(circle at 75% 30%,
    #fff 5px  
-   #fe6bab 8%    
-   #f527cc 60% 
-    #fe6bea 100%);
+   #fe6b6b 8%    
+   #f52746 60% 
+    #fe6b8d 100%);
     
-    animation: bounce 3.5s infinite alternate;
+    animation: bounce 5s infinite alternate;
     box-shadow:inset 0 0 20px white,
                inset 10px 0 46px #eaf5fc,
                inset -20px -60px 100px  #fde9ea,
@@ -53,7 +53,7 @@ body{
     width: 30px;
     height: 50px;
     border-radius: 50%;
-    background-color: #f799c2a3;
+    background-color: #f79999a3;
 }
 .ear-2{
     transform: rotateZ(40deg);
@@ -72,10 +72,10 @@ body{
 
 @keyframes bounce {
     0%,100%{
-        transform: translateY(0px);
+        transform: translateY(0px)  translate( -400px);
     }
     50%{
-        transform: translateY(-80px);
+        transform: translateY(-80px)  translate( 400px);
     }
 
 }
@@ -86,16 +86,71 @@ body{
    width: 150px;
    border-radius: 50%;
    height: 40px;
-   background-color: rgb(175, 87, 101);
-   animation: scale 3.5s infinite alternate;
+   background-color: rgb(175, 87, 87);
+   animation: scale 5s infinite alternate;
 }
 
 @keyframes scale {
     0%,100%{
-        transform: scale(0.7);
+        transform: scale(0.9)  translateX( -400px);
+       
     }
     50%{
-        transform: scale(0.9);
+        transform: scale(0.7)  translateX( 400px);
     }
 }
 
+.eye 
+{
+   position: relative;
+    justify-content: center;
+    align-items: center;
+    /* position: absolute ; */
+    top: -70px;
+    display: flex;
+    flex-direction: row;
+     gap: 50px;
+     background-color: #f50808;
+     border-radius: 40% 0% 40% 0%;
+   
+}
+
+.eye .span{
+  
+    width: 30px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    position: absolute ;
+    background-color: black;
+    position: relative;
+    border-radius: 40%;
+}
+
+.eye .span .white{
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #eaf5fc;
+}
+
+.mouth{
+    width: 80px;
+    height: 20px;
+    top: -40px;
+    left: 60px;
+    border-radius: 0% 0% 100% 100%;
+    position: relative;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.inner{
+    width: 60px;
+    height:3px;
+    background-color: #f50808;
+    position: relative;
+    
+}
