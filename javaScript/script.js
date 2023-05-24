@@ -1,29 +1,27 @@
- const  arr = [2,3,4,5,6,7,-5];
+ 
+ alert("hello every one good morning");
 
-// // for(let i =0;i<arr.length;i++){
-    
-// //     console.log(arr[i]);
-// // }
+ var bo =confirm("Are you chutiya");
 
-
-
-// arr.push(4);
-// const newa = arr.slice(2,5);
-// console.log(newa);
+ 
+ if(bo){
+alert("Ok, you can change your Name");
+let namastebtn = document.querySelector('button');
 
 
-// const firstneg = (num)=>{
-//     return num<0;
-// }
+let name = prompt('Enter Your Roll Number');
+alert("ok ,"+name);
+namastebtn.textContent ='Roll No.1 :'+name;
 
-// const result = arr.findIndex(firstneg);
+ }
 
-console.log("resul");
+let f = prompt("enter your first name");
+let l = prompt("enter your last name");
 
+if(f!=null&&l!=null){
+    myIntro(f ,l);
+}
 
-// arr.map((num)=>{
-//     console.log('array number ',num);
-// });
-
-
-
+ function myIntro(f ,l){
+    document.write("Hi, "+f+" "+l);
+ }
