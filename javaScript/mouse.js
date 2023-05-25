@@ -4,6 +4,7 @@
 function leftclick(){
    
     text.textContent = "left click";
+    
 }
 
 function rightclick(){

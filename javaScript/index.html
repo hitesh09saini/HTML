@@ -9,16 +9,29 @@
     #box{
         margin: 100px;
         width: 200px;
-        height: 200px;
+        height: 300px;
         background-color: rgb(4, 144, 97);
     }
    </style>
   
 </head>
 <body>
-    <div id="box" onclick="leftclick()" oncontextmenu="rightclick()"  ondblclick="RDclick() " onmousedown="mouseDown()" onmouseover="mouseover()" onmouseout="mouseout()"></div>
-     <h1></h1>
-   <script src="new.js"></script>
+   
+
+    <div id="box" >
+        <h1>keyboard</h1>
+        <p>onkeydown</p>
+        <input type="text" onkeydown="document.getElementById('box').style.background=this.value;">
+        <p>onkeyup</p>
+        <input type="text" onkeyup="document.getElementById('box').style.background=this.value;" >
+        <p>onkeypress</p>
+        <input type="text" onkeypress="document.getElementById('box').style.background=this.value;">
+    
+    </div>
+    
+     
+   <script src="keyboard.js"></script>
+    <script src="mouse.js"></script>
 </body>
 </html>
 

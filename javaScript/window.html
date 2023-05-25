@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: aqua;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="openWin()">Open window</button>
+    <button onclick="closeWin()">close window</button>
+    <script >
+        let myWindow;
+
+function openWin() {
+  myWindow = window.open("https://www.w3schools.com","_blank", "width=500, height=900");
+}
+
+function closeWin() {
+  myWindow.close();
+}
+    </script>
+</body>
+</html>
