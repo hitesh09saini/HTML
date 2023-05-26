@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+     #text{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1.5em;
+        padding: 52px;
+     }
+   </style>
+</head>
+<body id="text">
+
+    <h1>Scroll Event</h1>
+    <p>Lorem ipsum dolor sit amet consecteturlorem
+     adipisicing elit. Eveniet deleniti aut voluptatibus ex libero. Nesciunt neque corporis sint dolorum sapiente id assumenda, voluptatum, magni nemo mollitia aliquam. Placeat, obcaecati aspernatur?  Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem sed ab nulla repellendus id natus, quam non! In facere dignissimos doloremque repellat sunt veniam id, esse ut officia? Amet, Lorem ipsum dolor sit amet consectetur adipisicing elit. In, atque quos. Minima ea mollitia inventore, distinctio voluptatum eos quos voluptas quae provident. Architecto sint possimus et quaerat cupiditate rerum ad.</p>
+
+     <h1>Scroll Event</h1>
+    <p>Lorem ipsum dolor sit amet consecteturlorem
+     adipisicing elit. Eveniet deleniti aut voluptatibus ex libero. Nesciunt neque corporis sint dolorum sapiente id assumenda, voluptatum, magni nemo mollitia aliquam. Placeat, obcaecati aspernatur?  Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem sed ab nulla repellendus id natus, quam non! In facere dignissimos doloremque repellat sunt veniam id, esse ut officia? Amet, Lorem ipsum dolor sit amet consectetur adipisicing elit. In, atque quos. Minima ea mollitia inventore, distinctio voluptatum eos quos voluptas quae provident. Architecto sint possimus et quaerat cupiditate rerum ad.</p>
+     <h1>Scroll Event</h1>
+    <p>Lorem ipsum dolor sit amet consecteturlorem
+     adipisicing elit. Eveniet deleniti aut voluptatibus ex libero. Nesciunt neque corporis sint dolorum sapiente id assumenda, voluptatum, magni nemo mollitia aliquam. Placeat, obcaecati aspernatur?  Lorem ipsum dolor sit amet consectetur adipisicing elit. Exercitationem sed ab nulla repellendus id natus, quam non! In facere dignissimos doloremque repellat sunt veniam id, esse ut officia? Amet, Lorem ipsum dolor sit amet consectetur adipisicing elit. In, atque quos. Minima ea mollitia inventore, distinctio voluptatum eos quos voluptas quae provident. Architecto sint possimus et quaerat cupiditate rerum ad.</p>
+
+     <script>
+        window.addEventListener('scroll',function(){
+
+            if(window.pageYOffset>400){
+               console.log("over 400 px.....");
+               document.body.style.background="black";
+               document.body.style.color ="white";
+            }else {
+            console.log("under 400 px...");
+            document.body.style.background="white";
+            document.body.style.color ="black";
+            }
+        });
+
+
+     </script>
+</body>
+</html>
