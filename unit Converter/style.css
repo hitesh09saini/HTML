@@ -4,6 +4,15 @@
     box-sizing: border-box;
 }
 
+:root{
+
+    --primary-text-color: rgb(217, 219, 182);
+    --seconary-text-color: rgb(215, 202, 196) ;
+    --head-accent-color: rgb(14, 2, 55);
+    --hover-head-accent-color : rgb(21, 21, 81);
+    --back-color:rgb(243, 140, 4);
+}
+
 body{
     font-family: tahoma;
 }
@@ -23,8 +32,9 @@ h1 #heading{
     display: flex;
     border-radius: 10px;
     justify-content:space-between ;
-    background-color: rgb(12, 3, 46);
-    color: white;
+    background-color: var(--head-accent-color);
+    color: var(--primary-text-color);
+    
 }
 
 .icon{
@@ -34,7 +44,8 @@ h1 #heading{
   
 }
 .color{
-    background-color: rgb(9, 9, 70);
+    background-color: var(--hover-head-accent-color);
+    color: var(--seconary-text-color);
 }
 
 .active{
@@ -53,7 +64,7 @@ h1 #heading{
 
 
 .yellow{
-    background-color: rgb(243, 140, 4);
+    background-color: var(--back-color);
 }
 
 
