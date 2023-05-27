@@ -23,8 +23,8 @@ h1 #heading{
     display: flex;
     border-radius: 10px;
     justify-content:space-between ;
-    background-color: pink;
-    
+    background-color: rgb(12, 3, 46);
+    color: white;
 }
 
 .icon{
@@ -34,10 +34,8 @@ h1 #heading{
   
 }
 .color{
-    background-color: rgb(242, 244, 246);
-
+    background-color: rgb(9, 9, 70);
 }
-
 
 .active{
  
@@ -58,13 +56,8 @@ h1 #heading{
     background-color: rgb(243, 140, 4);
 }
 
-.blue{
-    background-color: rgb(12, 3, 46);
-    color: white;
-}
-/* .input-div{
-    display: inline-block;
-} */
+
+
 .inpt{
     padding: 5px 10px ;
     margin: 10px;
