@@ -53,7 +53,7 @@ h1 #heading{
     display: none;
 }
 
-#container{
+.container{
     width: 80%;
     margin: 15px auto 25px auto;
     text-align: center;
@@ -97,24 +97,24 @@ label{
         .inpt{
           width: 300px;
         }
-        }
+  }
 
-        @media screen and (max-width: 440px) {
+ @media screen and (max-width: 440px) {
             .inpt{
               width: 200px;
             }
-            }
+  }
 
-            @media screen and (max-width: 396px) {
+ @media screen and (max-width: 396px) {
                  .heading{
                     flex-wrap: wrap;
                     gap: 20px;
                    
                  }
-                }
-            @media screen and (max-width: 314px) {
+ }
+  @media screen and (max-width: 314px) {
                 .inpt{
                   width: 100px;
                   
                 }
-                }
+  }
