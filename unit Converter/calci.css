@@ -1,0 +1,154 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+    padding: 0;
+    font-family: consolas;
+    /* font-size: .9em; */
+}
+body{
+    display: flex;
+}
+.img1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.container{
+    
+    width: 50%;
+    position: relative;
+  margin: 40px;
+    height: 40%;
+    background-color:rgb(21, 21, 81) ;
+   box-shadow: 15px 15px 20px rgba(0, 0, 0, 0.1),
+   -15px -15px 20px #fffb;
+   padding: 20px ;
+   border-radius: 10px;
+}
+.history{
+    background-color: rgb(243, 140, 4);
+    width: 50%;
+    padding: 10px;
+    overflow: hidden;
+    border: 4px solid rgb(21, 21, 81) ;
+}
+.h1{
+    height: 40px;
+    background-color: #ebe2e2;
+    border: 2px solid #dc6904;
+    user-select: none;
+}
+
+.container #input{
+    position: relative;
+    width: 87%;
+    background-color: #fff;
+    user-select: none;
+    overflow: none;
+    font-weight: 500 ;
+    margin: 20px;
+    height: 70px;
+   
+    text-align: end;
+    
+    border-radius: 10px;
+    margin-bottom: 12px;
+    
+    font-size: 2em;
+    line-height: 80px;
+    border: 5px solid rgb(243, 140, 4);
+
+   
+}
+.inner{
+    position: relative;
+    width: 100%;
+    height: 70%;
+    display: flex;
+  
+    gap: 20px;
+   justify-content:space-evenly ;
+}
+
+@media screen and (max-width: 1329px) {
+    .inner{
+        flex-wrap: wrap;
+    }
+}
+
+
+.left  {
+    
+    
+    border-radius: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1),
+     inset -5px -5px 20px #fff  ; 
+    position: relative;
+    display: grid;
+    padding: 10px;
+   background-color: #fff;
+   flex-wrap: wrap;
+  
+}
+
+.left #left{
+ position: relative;
+ grid-column: span 5;
+
+} 
+.right span{
+    padding: 12px;
+}
+.right{
+   
+   
+    border-radius: 20px;
+    flex-wrap: wrap;
+   
+    display: grid;
+    position: relative;
+    padding: 10px;
+    background-color: #fff;
+}
+.right #right{
+    position: relative;
+    grid-column: span 5;
+   
+   } 
+
+span{
+    position: relative;
+     
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1),
+    inset -5px -5px 20px #fff  ; 
+   padding: 5px;
+   margin: 5px;
+   cursor: pointer;
+   user-select: none;
+  
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   /* font-size: 1.2em; */
+   border: 2px solid #fff ;
+   color: rgb(21, 21, 81);
+ 
+    
+}
+
+span:hover{
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1),
+    inset -5px -5px 20px #ebe2e2  ; 
+    border: 2px solid #f37609 ;
+    border-radius: 10px;
+    transform:scale(1.2) ;
+}
+@media screen and (max-width: 770px) {
+   .right #right{
+         grid-column: span 3;
+    }
+  .left  #left{
+        grid-column: span 3;
+    }
+}

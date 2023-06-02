@@ -7,14 +7,15 @@
     <title>𝐄𝐥𝐞𝐜𝐭𝐫𝐚𝐎𝐩𝐭𝐢𝐦𝐚 | Unit Convertor </title>
     <link rel="shortcut icon" href="solar-energy.ico" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
+
     <script src="https://kit.fontawesome.com/b94ee17cb1.js" crossorigin="anonymous"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 </head>
 <body>
     <!-- nav bar -->
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary nav">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img id="img" src="logo.png" alt="logo"><span style="color: rgb(14, 2, 55);">𝐄𝐥𝐞𝐜𝐭𝐫𝐚</span><span style="color: rgb(243, 140, 4)">𝐎𝐩𝐭𝐢𝐦𝐚</span></a>
+          <a class="navbar-brand" href="index.html"><img id="img" src="logo.png" alt="logo"><span style="color: rgb(14, 2, 55);">𝐄𝐥𝐞𝐜𝐭𝐫𝐚</span><span style="color: rgb(243, 140, 4)">𝐎𝐩𝐭𝐢𝐦𝐚</span></a>
   
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -43,13 +44,94 @@
                 <a class="nav-link disabled">Disabled</a>
               </li>
             </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
+             
+               
+            
+           
         </div>
     </div>
   </nav>
+
+  <!-- calci -->
+  <div class="calci" >
+   
+        <img id="cal" style="width: 40px; user-select: none;" src="calculator .png" alt="calculator">
+    
+  </div>
+  <div class="container1 active" id="container1">
+    <div class="img1"><img  style="width: 50px; height: 50px;" src="logo.png" alt="logo"><img class="close" id="close" style="width: 30px; height: 30px;" src="close.png" alt="calculator"></div>
+     
+   <div id="input"> <h4 >00</h4></div>
+    <div class="inner">
+    
+    
+     <div class="right">
+        <span id="right"></span>
+        <span>7</span>
+        <span>8</span>
+        <span>9</span>
+        <span>+</span>
+        <span>Back</span>
+
+        <span>4</span>
+        <span>5</span>
+        <span>6</span>
+        <span>-</span>
+        <span>M+</span>
+
+        <span>1</span>
+        <span>2</span>
+        <span>3</span>
+        <span>x</span>
+        <span>M-</span>
+
+        <span>0</span>
+        <span>.</span>
+        <span>Exp</span>
+        <span>/</span>
+        <span>MR</span>
+
+        <span>±</span>
+        <span>RND</span>
+        <span>AC</span>
+        <span>=</span>
+        <span>Use</span>
+    </div>
+    <div class="left">
+        <span id="left"></span>
+        <span>sin</span>
+        <span>cos</span>
+        <span>tan</span>
+         <p style="user-select: none;"><input type="checkbox" name="" id="">Deg</p>
+         <p style="user-select: none;"><input type="checkbox" name="" id="">Red </p>
+
+        <span>sin<sup style="font-size: 0.5em;">-1</sup></span>
+        <span>cos<sup style="font-size: 0.5em;">-1</sup></span>
+        <span>tan<sup style="font-size: 0.5em;">-1</sup></span>
+        <span>π</span>
+        <span>e</span>
+
+        <span>xy</span>
+        <span>x3</span>
+        <span>x2</span>
+        <span>ex</span>
+        <span>10x</span>
+
+        <span>y√x</span>
+        <span>3√x</span>
+        <span>√x</span>
+        <span>ln</span>
+        <span>log</span>
+
+        <span>(</span>
+        <span>)</span>
+        <span>1/x</span>
+        <span>%</span>
+        <span>n!</span>
+     </div>
+</div>
+
+</div>
 
   <!-- heading -->
    <div class="heading " id="heading"><h1 id="heading">Length Convertor</h1><div class="icon " id="icon"><i class="fa-solid fa-sun  fa-2xl" style="color: #fa9200;"></i></div></div> 
@@ -283,7 +365,220 @@
     </div>
    </div>
 
+
+   <!-- volume -->
+
    
+   <div class="heading  " id="heading4"><h1 id="heading">Volume Convertor</h1><div class="icon " id="icon4"><i class="fa-solid fa-sun  fa-2xl" style="color: #fa9200;"></i></div></div> 
+   <div id="container4" class="yellow active container" >
+     <div class="input-div">
+       <label>Cubic Meter</label> <br>
+       <input type="number" value="1" id="qm" class="inpt">
+
+      </div>
+  
+   <div class="input-div">
+       <label>Cubic Kilo meter</label> <br>
+       <input type="number" value="1.E-9" id="qkm" class="inpt">
+   
+   </div>
+
+   <div class="input-div">
+       <label>Cubic Centi Meter</label> <br>
+       <input type="number" value="1000000" id="qcm" class="inpt">
+
+   </div>
+   <div class="input-div">
+       <label>Cubic Milli Meter</label> <br>
+       <input type="number" value="1000000000" id="qmm" class="inpt">
+
+   </div>
+
+
+   <div class="input-div">
+       <label>Liter</label> <br>
+       <input type="number" value="1000" id="L" class="inpt">
+
+   </div>
+
+   <div class="input-div">
+       <label>Milli Liter</label> <br>
+       <input type="number" value="1000000" id="ml" class="inpt">
+
+   </div>
+
+   <div class="input-div">
+       <label>US Gallon</label> <br>
+       <input type="number" value="264.17217686" id="ug" class="inpt">
+
+   </div>
+   <div class="input-div">
+       <label>Us Quart</label> <br>
+       <input type="number" value="1056.6887074" id="uq" class="inpt">
+
+   </div>
+
+
+   <div class="input-div">
+       <label>Us pint</label> <br>
+       <input type="number" value="2113.3774149" id="up" class="inpt">
+
+   </div>
+
+   <div class="input-div">
+       <label>Us Cup</label> <br>
+       <input type="number" value="4226.7548297" id="uc" class="inpt">
+
+   </div>
+
+   <div class="input-div">
+       <label>Us Fluid Ounce</label> <br>
+       <input type="number" value="33814.038638" id="ufo" class="inpt">
+
+   </div>
+
+   <div class="input-div">
+    <label>Us Table Spoon</label> <br>
+    <input type="number" value="67628.077276" id="utls" class="inpt">
+
+   </div>
+
+<div class="input-div">
+    <label>Us Tea Spoon</label> <br>
+    <input type="number" value="202884.23183" id="uts" class="inpt">
+
+</div>
+
+<div class="input-div">
+    <label>Imperial Gallon</label> <br>
+    <input type="number" value="219.9692483" id="ig" class="inpt">
+
+</div>
+<div class="input-div">
+    <label>Imperial Quart</label> <br>
+    <input type="number" value="879.8769932" id="iq" class="inpt">
+
+</div>
+<div class="input-div">
+    <label>Imperial Pint</label> <br>
+    <input type="number" value="1759.7539864" id="ip" class="inpt">
+
+   </div>
+
+<div class="input-div">
+    <label>Imperial Fluid Ounce</label> <br>
+    <input type="number" value="35195.079728" id="ifo" class="inpt">
+
+</div>
+
+<div class="input-div">
+    <label>Imperial Table Spoon</label> <br>
+    <input type="number" value="56312.127565" id="itls" class="inpt">
+
+</div>
+<div class="input-div">
+    <label>Imperial Tea Spoon</label> <br>
+    <input type="number" value="168936.38269" id="its" class="inpt">
+
+</div>
+
+<div class="input-div">
+    <label>Cubic Mile</label> <br>
+    <input type="number" value="2.399128636E-10" id="qml" class="inpt">
+
+   </div>
+
+<div class="input-div">
+    <label>Cubic Yard</label> <br>
+    <input type="number" value="1.3079506193" id="qy" class="inpt">
+
+</div>
+
+<div class="input-div">
+    <label>Cubic Foot</label> <br>
+    <input type="number" value="35.314666721" id="qf" class="inpt">
+
+</div>
+<div class="input-div">
+    <label>Cubic Inch</label> <br>
+    <input type="number" value="61023.744095" id="qi" class="inpt">
+
+</div>
+
+</div>
+
+   
+  <!-- Time convertor -->
+
+  
+  <div class="heading  " id="heading5"><h1 id="heading">Time Convertor</h1><div class="icon " id="icon5"><i class="fa-solid fa-sun  fa-2xl" style="color: #fa9200;"></i></div></div> 
+  <div id="container5" class="yellow active container" >
+    <div class="input-div">
+      <label>Second</label> <br>
+      <input type="number" value="1" id="se" class="inpt">
+
+     </div>
+ 
+  <div class="input-div">
+      <label>Milli Second</label> <br>
+      <input type="number" value="1000" id="mse" class="inpt">
+  
+  </div>
+
+  <div class="input-div">
+      <label>Micro Second</label> <br>
+      <input type="number" value="1000000" id="mise" class="inpt">
+
+  </div>
+  <div class="input-div">
+      <label>Nano Second</label> <br>
+      <input type="number" value="1000000000" id="nse" class="inpt">
+
+  </div>
+
+
+  <div class="input-div">
+      <label>Pico Second</label> <br>
+      <input type="number" value="1000000000000" id="pse" class="inpt">
+
+  </div>
+
+  <div class="input-div">
+      <label>Minute</label> <br>
+      <input type="number" value="0.0166666667" id="M" class="inpt">
+
+  </div>
+
+  <div class="input-div">
+      <label>Hour</label> <br>
+      <input type="number" value="0.0002777778" id="H" class="inpt">
+
+  </div>
+  <div class="input-div">
+      <label>Day</label> <br>
+      <input type="number" value="0.0000115741" id="D" class="inpt">
+
+  </div>
+
+
+  <div class="input-div">
+      <label>Week</label> <br>
+      <input type="number" value="0.0000016534" id="W" class="inpt">
+
+  </div>
+
+  <div class="input-div">
+      <label>Month</label> <br>
+      <input type="number" value="3.802570537E-7" id="Mo" class="inpt">
+
+  </div>
+
+  <div class="input-div">
+      <label>year</label> <br>
+      <input type="number" value="3.168808781E-8" id="Y" class="inpt">
+
+  </div>
+ </div>
    
 </body>
 <script src="script.js"></script>

@@ -1,3 +1,25 @@
+// calculator
+const con = document.getElementById('container1');
+const calculator = document.getElementById('cal');
+const close = document.getElementById('close');
+
+
+calculator.addEventListener('click',function(){
+    calculator.classList.toggle('active');
+    con.classList.toggle('active');
+   
+});
+
+close.addEventListener('click',function(){
+    calculator.classList.toggle('active');
+    con.classList.toggle('active');
+   
+});
+
+
+
+
+
 const tog = document.getElementById('heading');
 const cont = document.getElementById('container');
 const ic = document.getElementById('icon');
@@ -915,3 +937,1525 @@ aa.addEventListener('input' , function () {
 });
 
 
+// volume
+
+const tog4 = document.getElementById('heading4');
+const cont4 = document.getElementById('container4');
+const ic4 = document.getElementById('icon4');
+
+tog4.addEventListener('click',function(){
+    cont4.classList.toggle('active');
+    tog4.classList.toggle('color');
+    ic4.classList.toggle('fa-spin');
+});
+
+
+var qm = document.getElementById('qm');
+var qkm = document.getElementById('qkm');
+var qcm = document.getElementById('qcm');
+var qmm = document.getElementById('qmm');
+var L = document.getElementById('L');
+var ml = document.getElementById('ml');
+var ug = document.getElementById('ug');
+var uq = document.getElementById('uq');
+var up = document.getElementById('up');
+var uc = document.getElementById('uc');
+var ufo = document.getElementById('ufo');
+var utls = document.getElementById('utls');
+
+var uts = document.getElementById('uts');
+var ig = document.getElementById('ig');
+var iq = document.getElementById('iq');
+var ip = document.getElementById('ip');
+var ifo = document.getElementById('ifo');
+var itls = document.getElementById('itls');
+var its = document.getElementById('its');
+var qml = document.getElementById('qml');
+var qy = document.getElementById('qy');
+var qf = document.getElementById('qf');
+var qi = document.getElementById('qi');
+
+qm.addEventListener('input',function(){
+    let qmi = this.value;
+
+    let qkmi = qmi*1.E-9;
+    qkm.value = qkmi;
+    let qcmi = qmi*1000000;
+    qcm .value = qcmi;
+    let qmmi = qmi*1000000000;
+    qmm.value = qmmi;
+    let Li = qmi*1000;
+    L.value = Li;
+    let mli = qmi*1000000;
+    ml.value = mli;
+    let ugi = qmi*264.17217686;
+    ug.value = ugi;
+    let uqi = qmi*1056.6887074;
+    uq.value= uqi;
+    let upi = qmi*2113.3774149;
+    up.value =upi;
+    let uci = qmi*4226.7548297;
+    uc.value = uci;
+    let ufoi = qmi*33814.038638;
+    ufo.value = ufoi;
+    let utlsi = qmi*67628.077276;
+    utls.value = utlsi;
+
+    let utsi = qmi*202884.23183;
+    uts.value = utsi;
+    let igi = qmi*219.9692483;
+    ig.value = igi;
+    let iqi = qmi*879.8769932;
+    iq.value = iqi;
+    let ipi = qmi*1759.7539864;
+    ip.value = ipi;
+    let ifoi = qmi*35195.079728;
+    ifo.value = ifoi;
+    let itlsi = qmi*56312.127565;
+    itls.value = itlsi;
+    let itsi = qmi*168936.38269;
+    its.value= itsi;
+    let qmli = qmi*2.399128636E-10;
+    qml.value =qmli;
+    let qyi = qmi*1.3079506193;
+    qy.value = qyi;
+    let qfi = qmi*35.314666721;
+    qf.value = qfi;
+     let qii = qmi*61023.744095;
+     qi.value =qii;
+   
+
+});
+
+qkm.addEventListener('input',function(){
+    let qkmi = this.value;
+
+    let qmi = qkmi*1000000000000000;
+    qm.value = qmi;
+    let qcmi = qkmi*1000000000000000000;
+    qcm .value = qcmi;
+    let qmmi = qkmi*1000000000000;
+    qmm.value = qmmi;
+    let Li = qkmi*1000000000000000;
+    L.value = Li;
+    let mli = qkmi*1000000000000000;
+    ml.value = mli;
+    let ugi = qkmi*264172176858;
+    ug.value = ugi;
+    let uqi = qkmi*1056688707432;
+    uq.value= uqi;
+    let upi = qkmi*2113377414864;
+    up.value =upi;
+    let uci = qkmi*4226754829728;
+    uc.value = uci;
+    let ufoi = qkmi*33814038637823;
+    ufo.value = ufoi;
+    let utlsi = qkmi*67628077275645;
+    utls.value = utlsi;
+
+    let utsi = qkmi*202884231826936;
+    uts.value = utsi;
+    let igi = qkmi*219969248299;
+    ig.value = igi;
+    let iqi = qkmi*879876993196;
+    iq.value = iqi;
+    let ipi = qkmi*1759753986393;
+    ip.value = ipi;
+    let ifoi = qkmi*35195079727854;
+    ifo.value = ifoi;
+    let itlsi = qkmi*56312127564566;
+    itls.value = itlsi;
+    let itsi = qkmi*168936382693699;
+    its.value= itsi;
+    let qmli = qkmi*0.2399128636;
+    qml.value =qmli;
+    let qyi = qkmi*1307950619.3;
+    qy.value = qyi;
+    let qfi = qkmi*35314666721;
+    qf.value = qfi;
+     let qii = qkmi*61023744094732;
+     qi.value =qii;
+
+});
+
+qcm.addEventListener('input', function() {
+    let qcmi = this.value;
+
+    let qmi = qcmi*0.000001;
+    qm.value = qmi;
+    let qkmi = qcmi*9.999999999E-16;
+    qkm .value = qkmi;
+    let qmmi = qcmi*1000;
+    qmm.value = qmmi;
+    let Li = qcmi*0.001;
+    L.value = Li;
+    let mli = qcmi*1;
+    ml.value = mli;
+    let ugi = qcmi*0.0002641722;
+    ug.value = ugi;
+    let uqi = qcmi*0.0010566887;
+    uq.value= uqi;
+    let upi = qcmi*0.0021133774;
+    up.value =upi;
+    let uci = qcmi*0.0042267548;
+    uc.value = uci;
+    let ufoi = qcmi*0.0338140386;
+    ufo.value = ufoi;
+    let utlsi = qcmi*0.0676280773;
+    utls.value = utlsi;
+
+    let utsi = qcmi*0.2028842318;
+    uts.value = utsi;
+    let igi = qcmi*0.0002199692;
+    ig.value = igi;
+    let iqi = qcmi*0.000879877;
+    iq.value = iqi;
+    let ipi = qcmi*0.001759754;
+    ip.value = ipi;
+    let ifoi = qcmi*0.0351950797;
+    ifo.value = ifoi;
+    let itlsi = qcmi*0.0563121276;
+    itls.value = itlsi;
+    let itsi = qcmi*0.1689363827;
+    its.value= itsi;
+    let qmli = qcmi*2.399128636E-16;
+    qml.value =qmli;
+    let qyi = qcmi*0.000001308;
+    qy.value = qyi;
+    let qfi = qcmi*0.0000353147;
+    qf.value = qfi;
+     let qii = qcmi*0.0610237441;
+     qi.value =qii;
+
+
+});
+
+qmm.addEventListener('input' , function () {
+    let qmmi = this.value;
+
+    let qmi = qmmi*1.E-9;
+    qm.value = qmi;
+    let qkmi = qmmi*1.E-18;
+    qkm .value = qkmi;
+    let qcmi = qmmi*0.001;
+    qcm.value = qcmi;
+    let Li = qmmi*0.000001;
+    L.value = Li;
+    let mli = qmmi*0.001;
+    ml.value = mli;
+    let ugi = qmmi*2.641721768E-7;
+    ug.value = ugi;
+    let uqi = qmmi*0.0000010567;
+    uq.value= uqi;
+    let upi = qmmi*0.0000021134;
+    up.value =upi;
+    let uci = qmmi*0.0000042268;
+    uc.value = uci;
+    let ufoi = qmmi*0.000033814;
+    ufo.value = ufoi;
+    let utlsi = qmmi*0.0000676281;
+    utls.value = utlsi;
+
+    let utsi = qmmi*0.0002028842;
+    uts.value = utsi;
+    let igi = qmmi*2.199692482E-7;
+    ig.value = igi;
+    let iqi = qmmi*8.798769931E-7;
+    iq.value = iqi;
+    let ipi = qmmi*0.0000017598;
+    ip.value = ipi;
+    let ifoi = qmmi*0.0000351951;
+    ifo.value = ifoi;
+    let itlsi = qmmi*0.0000563121;
+    itls.value = itlsi;
+    let itsi = qmmi*0.0001689364;
+    its.value= itsi;
+    let qmli = qmmi*2.399128636E-19;
+    qml.value =qmli;
+    let qyi = qmmi*1.307950619E-9;
+    qy.value = qyi;
+    let qfi = qmmi*3.531466672E-8;
+    qf.value = qfi;
+     let qii = qmmi*0.0000610237;
+     qi.value =qii;
+
+
+});
+
+L.addEventListener('input' , function () {
+    let Li = this.value;
+
+    let qmi = Li*0.001;
+    qm.value = qmi;
+    let qkmi = Li*1.E-12;
+    qkm .value = qkmi;
+    let qcmi = Li*1000;
+    qcm.value = qcmi;
+    let qmmi = Li*1000000;
+    qmm.value = qmmi;
+    let mli = Li*1000;
+    ml.value = mli;
+    let ugi = Li*0.2641721769;
+    ug.value = ugi;
+    let uqi = Li*1.0566887074;
+    uq.value= uqi;
+    let upi = Li*2.1133774149;
+    up.value =upi;
+    let uci = Li*4.2267548297;
+    uc.value = uci;
+    let ufoi = Li*33.814038638;
+    ufo.value = ufoi;
+    let utlsi = Li*67.628077276;
+    utls.value = utlsi;
+
+    let utsi = Li*202.88423183;
+    uts.value = utsi;
+    let igi = Li*0.2199692483;
+    ig.value = igi;
+    let iqi = Li*0.8798769932;
+    iq.value = iqi;
+    let ipi = Li*1.7597539864;
+    ip.value = ipi;
+    let ifoi = Li*35.195079728;
+    ifo.value = ifoi;
+    let itlsi = Li*56.312127565;
+    itls.value = itlsi;
+    let itsi = Li*168.93638269;
+    its.value= itsi;
+    let qmli = Li*2.399128636E-13;
+    qml.value =qmli;
+    let qyi = Li*0.0013079506;
+    qy.value = qyi;
+    let qfi = Li*0.0353146667;
+    qf.value = qfi;
+     let qii = Li*61.023744095;
+     qi.value =qii;
+
+
+});
+
+ml.addEventListener('input' , function () {
+    let mli = this.value;
+
+    let qmi = mli*0.000001;
+    qm.value = qmi;
+    let qkmi = mli*9.999999999E-16;
+    qkm .value = qkmi;
+    let qcmi = mli*1;
+    qcm.value = qcmi;
+    let qmmi = mli*1000;
+    qmm.value = qmmi;
+    let Li = mli*0.001;
+    L.value = Li;
+    let ugi = mli*0.0002641722;
+    ug.value = ugi;
+    let uqi = mli*0.0010566887;
+    uq.value= uqi;
+    let upi = mli*0.0021133774;
+    up.value =upi;
+    let uci = mli*0.0042267548;
+    uc.value = uci;
+    let ufoi = mli*0.0338140386;
+    ufo.value = ufoi;
+    let utlsi = mli*0.0676280773;
+    utls.value = utlsi;
+
+    let utsi = mli*0.2028842318;
+    uts.value = utsi;
+    let igi = mli*0.0002199692;
+    ig.value = igi;
+    let iqi = mli*0.000879877;
+    iq.value = iqi;
+    let ipi = mli*0.001759754;
+    ip.value = ipi;
+    let ifoi = mli*0.0351950797;
+    ifo.value = ifoi;
+    let itlsi = mli*0.0563121276;
+    itls.value = itlsi;
+    let itsi = mli*0.1689363827;
+    its.value= itsi;
+    let qmli = mli*2.399128636E-16;
+    qml.value =qmli;
+    let qyi = mli*0.000001308;
+    qy.value = qyi;
+    let qfi = mli*0.0000353147;
+    qf.value = qfi;
+     let qii = mli*0.0610237441;
+     qi.value =qii;
+
+
+});
+
+ug.addEventListener('input' , function () {
+    let ugi = this.value;
+
+    let qmi = ugi*0.00378541;
+    qm.value = qmi;
+    let qkmi = ugi*3.78541E-12;
+    qkm .value = qkmi;
+    let qcmi = ugi*3785.41;
+    qcm.value = qcmi;
+    let qmmi = ugi*3785410;
+    qmm.value = qmmi;
+    let Li = ugi*3.78541;
+    L.value = Li;
+    let mli = ugi*3785.41;
+    ml.value = mli;
+    let uqi = ugi*4;
+    uq.value= uqi;
+    let upi = ugi*8;
+    up.value =upi;
+    let uci = ugi*16;
+    uc.value = uci;
+    let ufoi = ugi*128;
+    ufo.value = ufoi;
+    let utlsi = ugi*256;
+    utls.value = utlsi;
+
+    let utsi = ugi*768;
+    uts.value = utsi;
+    let igi = ugi*0.8326737922;
+    ig.value = igi;
+    let iqi = ugi*3.3306951688;
+    iq.value = iqi;
+    let ipi = ugi*6.6613903376;
+    ip.value = ipi;
+    let ifoi = ugi*133.22780675;
+    ifo.value = ifoi;
+    let itlsi = ugi*213.1644908;
+    itls.value = itlsi;
+    let itsi = ugi*639.49347241;
+    its.value= itsi;
+    let qmli = ugi*9.081685531E-13;
+    qml.value =qmli;
+    let qyi = ugi*0.0049511294;
+    qy.value = qyi;
+    let qfi = ugi*0.1336804926;
+    qf.value = qfi;
+     let qii = ugi*230.99989113;
+     qi.value =qii;
+});
+
+uq.addEventListener('input' , function () {
+    let uqi = this.value;
+
+    let qmi = uqi*0.0009463525;
+    qm.value = qmi;
+    let qkmi = uqi*9.463525E-13;
+    qkm .value = qkmi;
+    let qcmi = uqi*946.3525;
+    qcm.value = qcmi;
+    let qmmi = uqi*946352.5;
+    qmm.value = qmmi;
+    let Li = uqi*0.9463525;
+    L.value = Li;
+    let mli = uqi*946.3525;
+    ml.value = mli;
+    let ugi = uqi*0.25;
+    ug.value= ugi;
+    let upi = uqi*2;
+    up.value =upi;
+    let uci = uqi*4;
+    uc.value = uci;
+    let ufoi = uqi*32;
+    ufo.value = ufoi;
+    let utlsi = uqi*64;
+    utls.value = utlsi;
+
+    let utsi = uqi*192;
+    uts.value = utsi;
+    let igi = uqi*0.2081684481;
+    ig.value = igi;
+    let iqi = uqi*0.8326737922;
+    iq.value = iqi;
+    let ipi = uqi*1.6653475844;
+    ip.value = ipi;
+    let ifoi = uqi*33.306951688;
+    ifo.value = ifoi;
+    let itlsi = uqi*53.291122701;
+    itls.value = itlsi;
+    let itsi = uqi*159.8733681;
+    its.value= itsi;
+    let qmli = uqi*2.270421382E-13;
+    qml.value =qmli;
+    let qyi = uqi*0.0012377823;
+    qy.value = qyi;
+    let qfi = uqi*0.0334201231;
+    qf.value = qfi;
+     let qii = uqi*57.749972783;
+     qi.value =qii;
+
+
+});
+
+up.addEventListener('input' , function () {
+    let upi = this.value;
+
+    let qmi = upi*0.0004731763;
+    qm.value = qmi;
+    let qkmi = upi*0.0004731763;
+    qkm .value = qkmi;
+    let qcmi = upi*473.17625;
+    qcm.value = qcmi;
+    let qmmi = upi*473176.25;
+    qmm.value = qmmi;
+    let Li = upi*0.47317625;
+    L.value = Li;
+    let mli = upi*473.17625;
+    ml.value = mli;
+    let ugi = upi*0.125;
+    ug.value= ugi;
+    let uqi = upi*0.5;
+    uq.value =uqi;
+    let uci = upi*2;
+    uc.value = uci;
+    let ufoi = upi*16;
+    ufo.value = ufoi;
+    let utlsi = upi*32;
+    utls.value = utlsi;
+
+    let utsi = upi*96;
+    uts.value = utsi;
+    let igi = upi*0.104084224;
+    ig.value = igi;
+    let iqi = upi*0.4163368961;
+    iq.value = iqi;
+    let ipi = upi*0.8326737922;
+    ip.value = ipi;
+    let ifoi = upi*16.653475844;
+    ifo.value = ifoi;
+    let itlsi = upi*26.645561351;
+    itls.value = itlsi;
+    let itsi = upi*79.936684052;
+    its.value= itsi;
+    let qmli = upi*1.135210691E-13;
+    qml.value =qmli;
+    let qyi = upi*0.0006188912;
+    qy.value = qyi;
+    let qfi = upi*0.0167100616;
+    qf.value = qfi;
+     let qii = upi*28.874986392;
+     qi.value =qii;
+});
+
+uc.addEventListener('input' , function () {
+    let uci = this.value;
+
+    let qmi = uci*0.0002365881;
+    qm.value = qmi;
+    let qkmi = uci*2.36588125E-13;
+    qkm .value = qkmi;
+    let qcmi = uci*236.588125;
+    qcm.value = qcmi;
+    let qmmi = uci*236588.125;
+    qmm.value = qmmi;
+    let Li = uci*0.236588125;
+    L.value = Li;
+    let mli = uci*236.588125;
+    ml.value = mli;
+    let ugi = uci*0.0625;
+    ug.value= ugi;
+    let uqi = uci*0.25;
+    uq.value =uqi;
+    let upi = uci*0.5;
+    up.value = upi;
+    let ufoi = uci*8;
+    ufo.value = ufoi;
+    let utlsi = uci*16;
+    utls.value = utlsi;
+
+    let utsi = uci*48;
+    uts.value = utsi;
+    let igi = uci*0.052042112;
+    ig.value = igi;
+    let iqi = uci*0.2081684481;
+    iq.value = iqi;
+    let ipi = uci*0.4163368961;
+    ip.value = ipi;
+    let ifoi = uci*8.326737922;
+    ifo.value = ifoi;
+    let itlsi = uci*13.322780675;
+    itls.value = itlsi;
+    let itsi = uci*39.968342026;
+    its.value= itsi;
+    let qmli = uci*5.676053457E-14;
+    qml.value =qmli;
+    let qyi = uci*0.0003094456;
+    qy.value = qyi;
+    let qfi = uci*0.0083550308;
+    qf.value = qfi;
+     let qii = uci*14.437493196;
+     qi.value =qii;
+});
+
+ufo.addEventListener('input' , function () {
+    let ufoi = this.value;
+
+    let qmi = ufoi*0.0000295735;
+    qm.value = qmi;
+    let qkmi = ufoi*2.957351562E-14;
+    qkm .value = qkmi;
+    let qcmi = ufoi*29.573515625;
+    qcm.value = qcmi;
+    let qmmi = ufoi*29573.515625;
+    qmm.value = qmmi;
+    let Li = ufoi*0.0295735156;
+    L.value = Li;
+    let mli = ufoi*29.573515625;
+    ml.value = mli;
+    let ugi = ufoi*0.0078125;
+    ug.value= ugi;
+    let uqi = ufoi*0.03125;
+    uq.value =uqi;
+    let upi = ufoi*0.0625;
+    up.value = upi;
+    let uci = ufoi*0.125;
+    uc.value = uci;
+    let utlsi = ufoi*2;
+    utls.value = utlsi;
+
+    let utsi = ufoi*6;
+    uts.value = utsi;
+    let igi = ufoi*0.006505264;
+    ig.value = igi;
+    let iqi = ufoi*0.026021056;
+    iq.value = iqi;
+    let ipi = ufoi*0.052042112;
+    ip.value = ipi;
+    let ifoi = ufoi*1.0408422403;
+    ifo.value = ifoi;
+    let itlsi = ufoi*1.6653475844;
+    itls.value = itlsi;
+    let itsi = ufoi*4.9960427532;
+    its.value= itsi;
+    let qmli = ufoi*7.095066821E-15;
+    qml.value =qmli;
+    let qyi = ufoi*0.0000386807;
+    qy.value = qyi;
+    let qfi = ufoi*0.0010443788;
+    qf.value = qfi;
+     let qii = ufoi*1.8046866495;
+     qi.value =qii;
+});
+
+utls.addEventListener('input' , function () {
+    let utlsi = this.value;
+    let qmi = utlsi*0.0000147868;
+    qm.value = qmi;
+    let qkmi = utlsi*1.478675781E-14;
+    qkm .value = qkmi;
+    let qcmi = utlsi*14.786757812;
+    qcm.value = qcmi;
+    let qmmi = utlsi*14786.757812;
+    qmm.value = qmmi;
+    let Li = utlsi*0.0147867578;
+    L.value = Li;
+    let mli = utlsi*14.786757812;
+    ml.value = mli;
+    let ugi = utlsi*0.00390625;
+    ug.value= ugi;
+    let uqi = utlsi*0.015625;
+    uq.value =uqi;
+    let upi = utlsi*0.03125;
+    up.value = upi;
+    let uci = utlsi*0.0625;
+    uc.value = uci;
+    let ufoi = utlsi*0.5;
+    ufo.value = ufoi;
+
+    let utsi = utlsi*3;
+    uts.value = utsi;
+    let igi = utlsi*0.003252632;
+    ig.value = igi;
+    let iqi = utlsi*0.013010528;
+    iq.value = iqi;
+    let ipi = utlsi*0.026021056;
+    ip.value = ipi;
+    let ifoi = utlsi*0.5204211201;
+    ifo.value = ifoi;
+    let itlsi = utlsi*0.8326737922;
+    itls.value = itlsi;
+    let itsi = utlsi*2.4980213766;
+    its.value= itsi;
+    let qmli = utlsi*3.54753341E-15;
+    qml.value =qmli;
+    let qyi = utlsi*0.0000193403;
+    qy.value = qyi;
+    let qfi = utlsi*0.0005221894;
+    qf.value = qfi;
+     let qii = utlsi*0.9023433247;
+     qi.value =qii;
+});
+
+
+uts.addEventListener('input',function(){
+    let utsi = this.value;
+
+    let qmi = utsi*0.0000049289;
+    qm.value = qmi;
+    let qkmi = utsi*4.92891927E-15;
+    qkm .value = qkmi;
+    let qcmi = utsi*4.9289192708;
+    qcm.value = qcmi;
+    let qmmi = utsi*4928.9192708;
+    qmm.value = qmmi;
+    let Li = utsi*0.0049289193;
+    L.value = Li;
+    let mli = utsi*4.9289192708;
+    ml.value = mli;
+    let ugi = utsi*0.0013020833;
+    ug.value= ugi;
+    let uqi = utsi*0.0052083333;
+    uq.value =uqi;
+    let upi = utsi*0.0104166667;
+    up.value = upi;
+    let uci = utsi*0.0208333333;
+    uc.value = uci;
+    let ufoi = utsi*0.1666666667;
+    ufo.value = ufoi;
+
+    let utlsi = utsi*0.3333333333;
+    utls.value = utlsi;
+    let igi = utsi*0.0010842107;
+    ig.value = igi;
+    let iqi = utsi*0.0043368427;
+    iq.value = iqi;
+    let ipi = utsi*0.0086736853;
+    ip.value = ipi;
+    let ifoi = utsi*0.1734737067;
+    ifo.value = ifoi;
+    let itlsi = utsi*0.2775579307;
+    itls.value = itlsi;
+    let itsi = utsi*0.8326737922;
+    its.value= itsi;
+    let qmli = utsi*1.182511136E-15;
+    qml.value =qmli;
+    let qyi = utsi*0.0000064468;
+    qy.value = qyi;
+    let qfi = utsi*0.0001740631;
+    qf.value = qfi;
+     let qii = utsi*0.3007811082;
+     qi.value =qii;
+   
+
+});
+
+ig.addEventListener('input',function(){
+    let igi = this.value;
+
+    
+    let qmi = igi*0.00454609;
+    qm.value = qmi;
+    let qkmi = igi*4.54609E-12;
+    qkm .value = qkmi;
+    let qcmi = igi*4546.09;
+    qcm.value = qcmi;
+    let qmmi = igi*4546090;
+    qmm.value = qmmi;
+    let Li = igi*4.54609;
+    L.value = Li;
+    let mli = igi*4546.09;
+    ml.value = mli;
+    let ugi = igi*1.2009504915;
+    ug.value= ugi;
+    let uqi = igi*4.803801966;
+    uq.value =uqi;
+    let upi = igi*9.6076039319;
+    up.value = upi;
+    let uci = igi*19.215207864;
+    uc.value = uci;
+    let ufoi = igi*153.72166291;
+    ufo.value = ufoi;
+
+    let utlsi = igi*307.44332582;
+    utls.value = utlsi;
+    let utsi = igi*922.32997747;
+    uts.value = utsi;
+    let iqi = igi*4;
+    iq.value = iqi;
+    let ipi = igi*8;
+    ip.value = ipi;
+    let ifoi = igi*160;
+    ifo.value = ifoi;
+    let itlsi = igi*256;
+    itls.value = itlsi;
+    let itsi = igi*768;
+    its.value= itsi;
+    let qmli = igi*1.09066547E-12;
+    qml.value =qmli;
+    let qyi = igi*0.0059460612;
+    qy.value = qyi;
+    let qfi = igi*0.1605436532;
+    qf.value = qfi;
+     let qii = igi*277.41943279;
+     qi.value =qii;
+   
+
+
+});
+
+
+iq.addEventListener('input', function() {
+    let iqi = this.value;
+
+    let qmi = iqi*0.0011365225;
+    qm.value = qmi;
+    let qkmi = iqi*1.1365225E-12;
+    qkm .value = qkmi;
+    let qcmi = iqi*1136.5225;
+    qcm.value = qcmi;
+    let qmmi = iqi*1136522.5;
+    qmm.value = qmmi;
+    let Li = iqi*1.1365225;
+    L.value = Li;
+    let mli = iqi*1136.5225;
+    ml.value = mli;
+    let ugi = iqi*0.3002376229;
+    ug.value= ugi;
+    let uqi = iqi*1.2009504915;
+    uq.value =uqi;
+    let upi = iqi*2.401900983;
+    up.value = upi;
+    let uci = iqi*4.803801966;
+    uc.value = uci;
+    let ufoi = iqi*38.430415728;
+    ufo.value = ufoi;
+
+    let utlsi = iqi*76.860831456;
+    utls.value = utlsi;
+    let utsi = iqi*230.58249437;
+    uts.value = utsi;
+    let igi = iqi*0.25;
+    ig.value = igi;
+    let ipi = iqi*2;
+    ip.value = ipi;
+    let ifoi = iqi*40;
+    ifo.value = ifoi;
+    let itlsi = iqi*64;
+    itls.value = itlsi;
+    let itsi = iqi*192;
+    its.value= itsi;
+    let qmli = iqi*2.726663675E-13;
+    qml.value =qmli;
+    let qyi = iqi*0.0014865153;
+    qy.value = qyi;
+    let qfi = iqi*0.0401359133;
+    qf.value = qfi;
+     let qii = iqi*69.354858198;
+     qi.value =qii;
+
+});
+
+ip.addEventListener('input' , function () {
+    let ipi = this.value;
+
+    let qmi = ipi*0.0005682613;
+    qm.value = qmi;
+    let qkmi = ipi*5.6826125E-13;
+    qkm .value = qkmi;
+    let qcmi = ipi*568.26125;
+    qcm.value = qcmi;
+    let qmmi = ipi*568261.25;
+    qmm.value = qmmi;
+    let Li = ipi*0.56826125;
+    L.value = Li;
+    let mli = ipi*568.26125;
+    ml.value = mli;
+    let ugi = ipi*0.1501188114;
+    ug.value= ugi;
+    let uqi = ipi*0.6004752457;
+    uq.value =uqi;
+    let upi = ipi*1.2009504915;
+    up.value = upi;
+    let uci = ipi*2.401900983;
+    uc.value = uci;
+    let ufoi = ipi*19.215207864;
+    ufo.value = ufoi;
+
+    let utlsi = ipi*38.430415728;
+    utls.value = utlsi;
+    let utsi = ipi*115.29124718;
+    uts.value = utsi;
+    let igi = ipi*0.125;
+    ig.value = igi;
+    let iqi = ipi*0.5;
+    iq.value = iqi;
+    let ifoi = ipi*20;
+    ifo.value = ifoi;
+    let itlsi = ipi*32;
+    itls.value = itlsi;
+    let itsi = ipi*96;
+    its.value= itsi;
+    let qmli = ipi*1.363331837E-13;
+    qml.value =qmli;
+    let qyi = ipi*0.0007432577;
+    qy.value = qyi;
+    let qfi = ipi*0.0200679567;
+    qf.value = qfi;
+     let qii = ipi*34.677429099;
+     qi.value =qii;
+
+
+});
+
+ifo.addEventListener('input' , function () {
+    let ifoi = this.value;
+
+    let qmi = ifoi*0.0000284131;
+    qm.value = qmi;
+    let qkmi = ifoi*2.84130625E-14;
+    qkm .value = qkmi;
+    let qcmi = ifoi*28.4130625;
+    qcm.value = qcmi;
+    let qmmi = ifoi*28413.0625;
+    qmm.value = qmmi;
+    let Li = ifoi*0.0284130625;
+    L.value = Li;
+    let mli = ifoi*28.4130625;
+    ml.value = mli;
+    let ugi = ifoi*0.0075059406;
+    ug.value= ugi;
+    let uqi = ifoi*0.0300237623;
+    uq.value =uqi;
+    let upi = ifoi*0.0600475246;
+    up.value = upi;
+    let uci = ifoi*0.1200950491;
+    uc.value = uci;
+    let ufoi = ifoi*0.9607603932;
+    ufo.value = ufoi;
+
+    let utlsi = ifoi*1.9215207864;
+    utls.value = utlsi;
+    let utsi = ifoi*5.7645623592;
+    uts.value = utsi;
+    let igi = ifoi*0.00625;
+    ig.value = igi;
+    let iqi = ifoi*0.025;
+    iq.value = iqi;
+    let ipi = ifoi*0.05;
+    ip.value = ipi;
+    let itlsi = ifoi*1.6;
+    itls.value = itlsi;
+    let itsi = ifoi*4.8;
+    its.value= itsi;
+    let qmli = ifoi*6.816659189E-15;
+    qml.value =qmli;
+    let qyi = ifoi*0.0000371629;
+    qy.value = qyi;
+    let qfi = ifoi*0.0010033978;
+    qf.value = qfi;
+     let qii = ifoi*1.7338714549;
+     qi.value =qii;
+
+
+});
+
+itls.addEventListener('input' , function () {
+    let itlsi = this.value;
+
+    let qmi = itlsi*0.0000177582;
+    qm.value = qmi;
+    let qkmi = itlsi*1.775816406E-14;
+    qkm .value = qkmi;
+    let qcmi = itlsi*17.758164063;
+    qcm.value = qcmi;
+    let qmmi = itlsi*17758.164063;
+    qmm.value = qmmi;
+    let Li = itlsi*0.0177581641;
+    L.value = Li;
+    let mli = itlsi*17.758164063;
+    ml.value = mli;
+    let ugi = itlsi*0.0046912129;
+    ug.value= ugi;
+    let uqi = itlsi*0.0187648514;
+    uq.value =uqi;
+    let upi = itlsi*0.0375297029;
+    up.value = upi;
+    let uci = itlsi*0.0750594057;
+    uc.value = uci;
+    let ufoi = itlsi*0.6004752457;
+    ufo.value = ufoi;
+
+    let utlsi = itlsi*1.2009504915;
+    utls.value = utlsi;
+    let utsi = itlsi*3.6028514745;
+    uts.value = utsi;
+    let igi = itlsi*0.00390625;
+    ig.value = igi;
+    let iqi = itlsi*0.015625;
+    iq.value = iqi;
+    let ipi = itlsi*0.03125;
+    ip.value = ipi;
+    let ifoi = itlsi*0.625;
+    ifo.value = ifoi;
+    let itsi = itlsi*3;
+    its.value= itsi;
+    let qmli = itlsi*4.260411993E-15;
+    qml.value =qmli;
+    let qyi = itlsi*0.0000232268;
+    qy.value = qyi;
+    let qfi = itlsi*0.0006271236;
+    qf.value = qfi;
+     let qii = itlsi*1.0836696593;
+     qi.value =qii;
+
+});
+its.addEventListener('input' , function () {
+    let itsi = this.value;
+
+    let qmi = itsi*0.0000059194;
+    qm.value = qmi;
+    let qkmi = itsi*5.91938802E-15;
+    qkm .value = qkmi;
+    let qcmi = itsi*5.9193880208;
+    qcm.value = qcmi;
+    let qmmi = itsi*5919.3880208;
+    qmm.value = qmmi;
+    let Li = itsi*0.005919388;
+    L.value = Li;
+    let mli = itsi*5.9193880208;
+    ml.value = mli;
+    let ugi = itsi*0.0015637376;
+    ug.value= ugi;
+    let uqi = itsi*0.0062549505;
+    uq.value =uqi;
+    let upi = itsi*0.012509901;
+    up.value = upi;
+    let uci = itsi*0.0250198019;
+    uc.value = uci;
+    let ufoi = itsi*0.2001584152;
+    ufo.value = ufoi;
+
+    let utlsi = itsi*0.4003168305;
+    utls.value = utlsi;
+    let utsi = itsi*1.2009504915;
+    uts.value = utsi;
+    let igi = itsi*0.0013020833;
+    ig.value = igi;
+    let iqi = itsi*0.0052083333;
+    iq.value = iqi;
+    let ipi = itsi*0.0104166667;
+    ip.value = ipi;
+    let ifoi = itsi*0.2083333333;
+    ifo.value = ifoi;
+    let itlsi = itsi*0.3333333333;
+    itls.value= itlsi;
+    let qmli = itsi*1.420137331E-15;
+    qml.value =qmli;
+    let qyi = itsi*0.0000077423;
+    qy.value = qyi;
+    let qfi = itsi*0.0002090412;
+    qf.value = qfi;
+     let qii = itsi*0.3612232198;
+     qi.value =qii;
+
+});
+
+qml.addEventListener('input' , function () {
+    let qmli = this.value;
+
+    let qmi = qmli*4168180000;
+    qm.value = qmi;
+    let qkmi = qmli*4.16818;
+    qkm .value = qkmi;
+    let qcmi = qmli*4168180000000000;
+    qcm.value = qcmi;
+    let qmmi = qmli*4168179999999999500;
+    qmm.value = qmmi;
+    let Li = qmli*4168180000000;
+    L.value = Li;
+    let mli = qmli*4168180000000000;
+    ml.value = mli;
+    let ugi = qmli*1101117184136;
+    ug.value= ugi;
+    let uqi = qmli*4404468736544;
+    uq.value =uqi;
+    let upi = qmli*8808937473087;
+    up.value = upi;
+    let uci = qmli*17617874946175;
+    uc.value = uci;
+    let ufoi = qmli*140942999569399;
+    ufo.value = ufoi;
+
+    let utlsi = qmli*281885999138799;
+    utls.value = utlsi;
+    let utsi = qmli*845657997416396;
+    uts.value = utsi;
+    let igi = qmli*916871421375;
+    ig.value = igi;
+    let iqi = qmli*3667485685501;
+    iq.value = iqi;
+    let ipi = qmli*7334971371002;
+    ip.value = ipi;
+    let ifoi = qmli*146699427420047;
+    ifo.value = ifoi;
+    let itlsi = qmli*234719083872075;
+    itls.value= itlsi;
+    let itsi = qmli*704157251616224;
+    its.value =itsi;
+    let qyi = qmli*5451773612.4;
+    qy.value = qyi;
+    let qfi = qmli*147197887535;
+    qf.value = qfi;
+     let qii = qmli*254357949660781;
+     qi.value =qii;
+
+});
+
+qy.addEventListener('input' , function () {
+    let qyi = this.value;
+
+    let qmi = qyi*0.764554858;
+    qm.value = qmi;
+    let qkmi = qyi*7.645548579E-10;
+    qkm .value = qkmi;
+    let qcmi = qyi*764554.85798;
+    qcm.value = qcmi;
+    let qmmi = qyi*764554857.98;
+    qmm.value = qmmi;
+    let Li = qyi*764.55485798;
+    L.value = Li;
+    let mli = qyi*764554.85798;
+    ml.value = mli;
+    let ugi = qyi*201.97412116;
+    ug.value= ugi;
+    let uqi = qyi*807.89648464;
+    uq.value =uqi;
+    let upi = qyi*1615.7929693;
+    up.value = upi;
+    let uci = qyi*3231.5859386;
+    uc.value = uci;
+    let ufoi = qyi*25852.687509;
+    ufo.value = ufoi;
+
+    let utlsi = qyi*51705.375017;
+    utls.value = utlsi;
+    let utsi = qyi*155116.12505;
+    uts.value = utsi;
+    let igi = qyi*168.17855739;
+    ig.value = igi;
+    let iqi = qyi*672.71422958;
+    iq.value = iqi;
+    let ipi = qyi*1345.4284592;
+    ip.value = ipi;
+    let ifoi = qyi*26908.569183;
+    ifo.value = ifoi;
+    let itlsi = qyi*43053.710693;
+    itls.value= itlsi;
+    let itsi = qyi*129161.13208;
+    its.value =itsi;
+    let qmli = qyi*1.834265453E-10;
+    qml.value = qmli;
+    let qfi = qyi*27;
+    qf.value = qfi;
+     let qii = qyi*46656;
+     qi.value =qii;
+});
+
+qf.addEventListener('input' , function () {
+    let qfi = this.value;
+
+    let qmi = qfi*0.0283168466;
+    qm.value = qmi;
+    let qkmi = qfi*2.831684659E-11;
+    qkm .value = qkmi;
+    let qcmi = qfi*28316.846592;
+    qcm.value = qcmi;
+    let qmmi = qfi*28316846.592;
+    qmm.value = qmmi;
+    let Li = qfi*28.316846592;
+    L.value = Li;
+    let mli = qfi*28316.846592;
+    ml.value = mli;
+    let ugi = qfi*7.480523006;
+    ug.value= ugi;
+    let uqi = qfi*29.922092024;
+    uq.value =uqi;
+    let upi = qfi*59.844184048;
+    up.value = upi;
+    let uci = qfi*119.6883681;
+    uc.value = uci;
+    let ufoi = qfi*957.50694476;
+    ufo.value = ufoi;
+
+    let utlsi = qfi*1915.0138895;
+    utls.value = utlsi;
+    let utsi = qfi*5745.0416686;
+    uts.value = utsi;
+    let igi = qfi*6.228835459;
+    ig.value = igi;
+    let iqi = qfi*24.915341836;
+    iq.value = iqi;
+    let ipi = qfi*49.830683672;
+    ip.value = ipi;
+    let ifoi = qfi*996.61367345;
+    ifo.value = ifoi;
+    let itlsi = qfi*1594.5818775;
+    itls.value= itlsi;
+    let itsi = qfi*4783.7456325;
+    its.value =itsi;
+    let qmli = qfi*6.793575755E-12;
+    qml.value = qmli;
+    let qyi = qfi*0.037037037;
+    qy.value = qyi;
+     let qii = qfi*1728;
+     qi.value =qii;
+});
+
+qi.addEventListener('input' , function () {
+    let qii = this.value;
+
+    let qmi = qii*0.0000163871;
+    qm.value = qmi;
+    let qkmi = qii*1.6387064E-14;
+    qkm .value = qkmi;
+    let qcmi = qii*16.387064;
+    qcm.value = qcmi;
+    let qmmi = qii*16387.064;
+    qmm.value = qmmi;
+    let Li = qii*0.016387064;
+    L.value = Li;
+    let mli = qii*16.387064;
+    ml.value = mli;
+    let ugi = qii*0.0043290064;
+    ug.value= ugi;
+    let uqi = qii*0.0173160255;
+    uq.value =uqi;
+    let upi = qii*0.034632051;
+    up.value = upi;
+    let uci = qii*0.0692641019;
+    uc.value = uci;
+    let ufoi = qii*0.5541128153;
+    ufo.value = ufoi;
+
+    let utlsi = qii*1.1082256305;
+    utls.value = utlsi;
+    let utsi = qii*3.3246768915;
+    uts.value = utsi;
+    let igi = qii*0.0036046501;
+    ig.value = igi;
+    let iqi = qii*0.0036046501;
+    iq.value = iqi;
+    let ipi = qii*0.0288372012;
+    ip.value = ipi;
+    let ifoi = qii*0.576744024;
+    ifo.value = ifoi;
+    let itlsi = qii*0.9227904384;
+    itls.value= itlsi;
+    let itsi = qii*2.7683713151;
+    its.value =itsi;
+    let qmli = qii*3.931467451E-15;
+    qml.value = qmli;
+    let qyi = qii*0.0000214335;
+    qy.value = qyi;
+     let qfi = qii*0.0005787037;
+     qf.value =qfi;
+});
+
+// time
+
+const tog5 = document.getElementById('heading5');
+const cont5 = document.getElementById('container5');
+const ic5 = document.getElementById('icon5');
+
+tog5.addEventListener('click',function(){
+    cont5.classList.toggle('active');
+    tog5.classList.toggle('color');
+    ic5.classList.toggle('fa-spin');
+});
+
+var se = document.getElementById('se');
+var mse = document.getElementById('mse');
+var mise = document.getElementById('mise');
+var nse = document.getElementById('nse');
+var pse = document.getElementById('pse');
+var M = document.getElementById('M');
+var H = document.getElementById('H');
+var D = document.getElementById('D');
+var W = document.getElementById('W');
+var Mo = document.getElementById('Mo');
+var Y = document.getElementById('Y');
+
+se.addEventListener('input',function(){
+    let sei = this.value;
+
+    let msei = sei*1000;
+    mse.value = msei;
+    let misei = sei*1000000;
+    mise.value = misei;
+    let nsei = sei*1000000000;
+    nse.value = nsei;
+    let psei = sei*1000000000000;
+    pse.value = psei;
+    let Mi = sei*0.0166666667;
+   M.value = Mi;
+    let Hi = sei*0.0002777778;
+    H.value = Hi;
+    let Di = sei*0.0000115741;
+    D.value= Di;
+    let Wi = sei*0.0000016534;
+    W.value =Wi;
+    let Moi = sei*3.802570537E-7;
+     Mo.value = Moi;
+    let Yi = sei*3.168808781E-8;
+    Y.value = Yi;
+   
+
+});
+
+mse.addEventListener('input',function(){
+    let msei = this.value;
+
+    
+    let sei = msei*0.001;
+    se.value = sei;
+    let misei = msei*1000;
+    mise.value = misei;
+    let nsei = msei*1000000;
+    nse.value = nsei;
+    let psei = msei*1000000000;
+    pse.value = psei;
+    let Mi = msei*0.0000166667;
+    M.value = Mi;
+    let Hi = msei*2.777777777E-7;
+    H.value = Hi;
+    let Di = msei*1.157407407E-8;
+    D.value= Di;
+    let Wi = msei*1.653439153E-9;
+    W.value =Wi;
+    let Moi = msei*3.802570537E-10;
+     Mo.value = Moi;
+    let Yi = msei*3.168808781E-11;
+    Y.value = Yi;
+
+});
+
+
+mise.addEventListener('input', function() {
+    let misei = this.value;
+
+    let sei = misei*0.000001;
+    se.value = sei;
+    let msei = misei*0.001;
+    mse.value = msei;
+    let nsei = misei*1000;
+    nse.value = nsei;
+    let psei = misei*1000000;
+    pse.value = psei;
+    let Mi = misei*1.666666666E-8;
+    M.value = Mi;
+    let Hi = misei*2.777777777E-10;
+    H.value = Hi;
+    let Di = misei*1.157407407E-11;
+    D.value= Di;
+    let Wi = misei*1.653439153E-12;
+    W.value =Wi;
+    let Moi = misei*3.802570537E-13;
+     Mo.value = Moi;
+    let Yi = misei*3.168808781E-14;
+    Y.value = Yi;
+
+});
+
+nse.addEventListener('input' , function () {
+    let nsei = this.value;
+
+    let sei = nsei*1.E-9;
+    se.value = sei;
+    let msei = nsei*0.000001;
+    mse.value = msei;
+    let misei = nsei*0.001;
+   mise.value = misei;
+    let psei = nsei*1000;
+    pse.value = psei;
+    let Mi = nsei*1.666666666E-11;
+    M.value = Mi;
+    let Hi = nsei*2.777777777E-13;
+    H.value = Hi;
+    let Di = nsei*1.157407407E-14;
+    D.value= Di;
+    let Wi = nsei*1.653439153E-15;
+    W.value =Wi;
+    let Moi = nsei*3.802570537E-16;
+     Mo.value = Moi;
+    let Yi = nsei*3.168808781E-17;
+    Y.value = Yi;
+
+});
+
+pse.addEventListener('input' , function () {
+    let psei = this.value;
+
+    let sei = psei*1.E-12;
+    se.value = sei;
+    let msei = psei*1.E-9;
+    mse.value = msei;
+    let misei = psei*0.000001;
+   mise.value = misei;
+    let nsei = psei*0.001;
+    nse.value = nsei;
+    let Mi = psei*1.666666666E-14;
+    M.value = Mi;
+    let Hi = psei*2.777777777E-16;
+    H.value = Hi;
+    let Di = psei*1.157407407E-17;
+    D.value= Di;
+    let Wi = psei*1.653439153E-18;
+    W.value =Wi;
+    let Moi = psei*3.802570537E-19;
+     Mo.value = Moi;
+    let Yi = psei*3.168808781E-20;
+    Y.value = Yi;
+
+});
+
+M.addEventListener('input' , function () {
+    let Mi = this.value;
+
+     let sei = Mi*60;
+    se.value = sei;
+    let msei = Mi*60000;
+    mse.value = msei;
+    let misei = Mi*60000000;
+    mise.value = misei;
+    let nsei = Mi*60000000000;
+    nse.value = nsei;
+    let psei = Mi*60000000000000;
+    pse.value = psei;
+    let Hi = Mi*0.0166666667;
+    H.value = Hi;
+    let Di = Mi*0.0006944444;
+    D.value= Di;
+    let Wi = Mi*0.0000992063;
+    W.value =Wi;
+    let Moi = Mi*0.0000228154;
+     Mo.value = Moi;
+    let Yi = Mi*0.0000019013;
+    Y.value = Yi;
+});
+H.addEventListener('input' , function () {
+    let Hi = this.value;
+
+  
+    let sei = Hi*3600;
+    se.value = sei;
+    let msei = Hi*3600000;
+    mse.value = msei;
+    let misei = Hi*3600000000;
+    mise.value = misei;
+    let nsei = Hi*3600000000000;
+    nse.value = nsei;
+    let psei = Hi*3600000000000000;
+    pse.value = psei;
+    let Mi = Hi*60;
+    M.value = Mi;
+    let Di = Hi*0.0416666667;
+    D.value= Di;
+    let Wi = Hi*0.005952381;
+    W.value =Wi;
+    let Moi = Hi*0.005952381;
+     Mo.value = Moi;
+    let Yi = Hi*0.0001140771;
+    Y.value = Yi;
+});
+
+D.addEventListener('input' , function () {
+    let Di = this.value;
+
+    let sei = Di*86400;
+    se.value = sei;
+    let msei = Di*86400000;
+    mse.value = msei;
+    let misei = Di*86400000000;
+    mise.value = misei;
+    let nsei = Di*86400000000000;
+    nse.value = nsei;
+    let psei = Di*86400000000000000;
+    pse.value = psei;
+    let Mi = Di*1440;
+    M.value = Mi;
+    let Hi = Di*24;
+    H.value= Hi;
+    let Wi = Di*0.1428571429;
+    W.value =Wi;
+    let Moi = Di*0.0328542094;
+     Mo.value = Moi;
+    let Yi = Di*0.0027378508;
+    Y.value = Yi;
+    
+});
+
+W.addEventListener('input' , function () {
+    let Wi = this.value;
+
+    let sei = Wi*604800;
+    se.value = sei;
+    let msei = Wi*604800000;
+    mse.value = msei;
+    let misei = Wi*604800000000;
+    mise.value = misei;
+    let nsei = Wi*604800000000000;
+    nse.value = nsei;
+    let psei = Wi*604800000000000000;
+    pse.value = psei;
+    let Mi = Wi*10080;
+    M.value = Mi;
+    let Hi = Wi*168;
+    H.value= Hi;
+    let Di = Wi*7;
+    D.value =Di;
+    let Moi = Wi*0.2299794661;
+     Mo.value = Moi;
+    let Yi = Wi*0.0191649555;
+    Y.value = Yi;
+});
+
+Mo.addEventListener('input' , function () {
+    let Moi = this.value;
+
+    let sei = Moi*2629800;
+    se.value = sei;
+    let msei = Moi*2629800000;
+    mse.value = msei;
+    let misei = Moi*2629800000000;
+    mise.value = misei;
+    let nsei = Moi*2629800000000000;
+    nse.value = nsei;
+    let psei = Moi*2629800000000000000;
+    pse.value = psei;
+    let Mi = Moi*43830;
+    M.value = Mi;
+    let Hi = Moi*730.5;
+    H.value= Hi;
+    let Di = Moi*30.4375;
+    D.value =Di;
+    let Wi = Moi*4.3482142857;
+     W.value = Wi;
+    let Yi = Moi*0.0833333333;
+    Y.value = Yi;
+});
+
+Y.addEventListener('input' , function () {
+    let Yi = this.value;
+
+    let sei = Yi*31557600;
+    se.value = sei;
+    let msei = Yi*31557600000;
+    mse.value = msei;
+    let misei = Yi*31557600000000;
+    mise.value = misei;
+    let nsei = Yi*31557600000000000;
+    nse.value = nsei;
+    let psei = Yi*31557600000000000000;
+    pse.value = psei;
+    let Mi = Yi*525960;
+    M.value = Mi;
+    let Hi = Yi*8766;
+    H.value= Hi;
+    let Di = Yi*365.25;
+    D.value =Di;
+    let Wi = Yi*52.178571429;
+     W.value = Wi;
+    let Moi = Yi*12;
+    Mo.value = Moi;
+});
