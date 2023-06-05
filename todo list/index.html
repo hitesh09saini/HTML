@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <style>
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .but{
+        display: flex;
+        gap: 40px;
+
+    }
+    .body{
+
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        align-items:center;
+        color: aliceblue;
+        width: 100vw;
+         height:50vh;
+         flex-direction: column;
+         gap: 50px;
+    }
+    .box{
+        display: flex;
+        flex-direction:column;
+        align-items: center;
+        color: blueviolet;
+        user-select: none;
+        width: 100vw;
+    }
+
+    .input{
+        width: 40%;
+        height: 20px;
+        color:rgb(228, 13, 13) ;
+        font-size: large;
+        
+    }
+    
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        overflow: auto;
+    }
+   
+    .tablebody{
+        width: 80%;
+        margin-top: 10px;
+    }
+
+    .container{
+          display: flex;
+          width: 100%;
+         flex-direction: row;
+         
+    }
+        #sn{
+            width: 40px;
+        }
+        #key{
+            width: 100px;
+        }
+        #s{
+            width: 80%;
+            overflow:auto ;
+        }
+
+        .box1{
+            border: 1px solid rgb(171, 171, 245);
+            height: 30px;
+            padding: 10px;
+            
+        }
+       .container button{
+            background-color: red;
+            position: relative;
+            top: 5px;
+            left: 5px;
+            border-color: red;
+            color: white;
+        }
+   </style>
+</head>
+<body>
+    <div class="body">
+    <div class="box">
+        <label for="title"><h1>T i t l e</h1></label>
+        <input type="text" id="input" class="input" >
+        <small style="color: rgba(244, 237, 237, 0.353);">Add an item to the list</small>
+        
+    </div>
+    <div>
+        <textarea name="" id="text" cols="70" rows="5"></textarea>
+    </div>
+    <div class="but">
+    <input type="button" value="submit" id="submit">
+    <button id="clear" onclick="clearStorage()">clear</button>
+    </div>
+
+   </div>
+   <div class="tablebody">
+
+   <div class="container " style="gap: 30px; ">
+    <div><h3>S.NO.</h3></div>
+    <div ><h3>KEY</h3></div>
+    <div id="s"><h3>TEXT</h3></div>
+    <div ><h3>Clear</h3></div>
+  </div>
+</div>
+    <div class="tablebody" id="tableBody" >
+    
+
+     </div>
+        
+     
+    
+
+    <script>
+         
+        function getandupdate() {
+            console.log("uploading....");
+            input = document.getElementById('input').value;
+            text = document.getElementById('text').value; 
+    
+           if(sessionStorage.getItem('itemsJson')==null){
+            itemjson = [];
+            itemjson.push([input,text]);
+            sessionStorage.setItem('itemsJson', JSON.stringify(itemjson));
+
+            }else{
+            itemjsonstr = sessionStorage.getItem('itemsJson');
+            itemjson = JSON.parse(itemjsonstr);
+            itemjson.push([input,text]);
+            sessionStorage.setItem('itemsJson',JSON.stringify(itemjson));
+
+
+         }
+
+          update();
+        }
+
+        function update() {
+            if(sessionStorage.getItem('itemsJson')==null){
+            itemjson =[];
+           
+            sessionStorage.setItem('itemsJson', JSON.stringify(itemjson));
+
+          }else{
+            itemjsonstr = sessionStorage.getItem('itemsJson');
+            itemjson = JSON.parse(itemjsonstr);
+
+          }
+
+         /// populate the table
+        tableBody = document.getElementById('tableBody');   
+        let str = '';
+
+         itemjson.forEach((element,index) => {
+            str +=`
+       
+         <div class="container" >
+
+            <div id="sn" class="box1">${index+1}</div>
+            <div id="key" class="box1">${element[0]}</div>
+            <div id="s" class="box1">${element[1]}</div>
+            <div ><button id="but" onclick="deleted(${index})" >X</button></div>
+         </div>
+            `;
+
+         });
+
+         tableBody.innerHTML = str;
+        }
+        add = document.getElementById('submit');
+          
+        add.addEventListener('click',getandupdate);
+        update();
+
+        function deleted(itemIndex){
+                console.log("Delete", itemIndex);
+                itemjsonstr = sessionStorage.getItem('itemjson')
+                itemjson = JSON.parse( itemjsonstr);
+                // Delete itemIndex element from the array
+                itemjson.splice(itemIndex,1);
+                sessionStorage.setItem('itemsJson', JSON.stringify(itemjson));
+                update();
+
+            }
+
+        function clearStorage(){
+                if (confirm("Do you areally want to clear?")){
+                console.log('Clearing the storage')
+                sessionStorage.clear();
+                update()
+                }
+            }
+     
+    </script>
+</body>
+  
+</html>
