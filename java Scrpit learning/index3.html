@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Simple Calculator</title>
+    <style>
+        .container {
+            max-width: 300px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+        }
+
+        .button {
+            display: inline-block;
+            width: 22%;
+            padding: 10px;
+            margin: 5px;
+            font-size: 16px;
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .operator-button {
+            width: 48%;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <input type="text" id="display" placeholder="0" readonly>
+        <br>
+        <button class="button" onclick="appendNumber(1)">1</button>
+        <button class="button" onclick="appendNumber(2)">2</button>
+        <button class="button" onclick="appendNumber(3)">3</button>
+        <button class="operator-button" onclick="appendOperator('+')">+</button>
+        <br>
+        <button class="button" onclick="appendNumber(4)">4</button>
+        <button class="button" onclick="appendNumber(5)">5</button>
+        <button class="button" onclick="appendNumber(6)">6</button>
+        <button class="operator-button" onclick="appendOperator('-')">-</button>
+        <br>
+        <button class="button" onclick="appendNumber(7)">7</button>
+        <button class="button" onclick="appendNumber(8)">8</button>
+        <button class="button" onclick="appendNumber(9)">9</button>
+        <button class="operator-button" onclick="appendOperator('*')">*</button>
+        <br>
+        <button class="button" onclick="appendNumber(0)">0</button>
+        <button class="operator-button" onclick="clearDisplay()">C</button>
+        <button class="operator-button" onclick="compute()">=</button>
+        <button class="operator-button" onclick="appendOperator('/')">/</button>
+        <br>
+        <input type="text" id="result" placeholder="Result" readonly>
+    </div>
+
+    <script>
+        var display = document.getElementById("display");
+        var result = document.getElementById("result");
+        var currentOperator = null;
+        var currentValue = null;
+
+        function appendNumber(number) {
+            if (display.value === "0") {
+                display.value = number;
+            } else {
+                display.value += number;
+            }
+        }
+
+        function appendOperator(operator) {
+            currentValue = parseFloat(display.value);
+            currentOperator = operator;
+            display.value = "0";
+        }
+
+        function clearDisplay() {
+            display.value = "0";
+            result.value = "";
+            currentOperator = null;
+            currentValue = null;
+        }
+
+        function compute() {
+            var value = parseFloat(display.value);
+
+            if (currentOperator === null || isNaN(currentValue) || isNaN(value)) {
+                result.value = "Error";
+                return;
+            }
+
+            switch (currentOperator) {
+                case "+":
+                    result.value = currentValue + value;
+                    break;
+                case "-":
+                    result.value = currentValue - value;
+                    break;
+                case "*":
+                    result.value = currentValue * value;
+                    break;
+                case "/":
+                    result.value = currentValue /value;
+                    break;

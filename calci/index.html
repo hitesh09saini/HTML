@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Calculator</title>
+  <style>
+    .calculator {
+      width: 50%;
+      border: 1px solid #ccc;
+      padding: 10px;
+      user-select: none;
+    }
+
+    .result {
+      border: 1px solid #ccc;
+      padding: 5px;
+      margin-bottom: 10px;
+      text-align: right;
+      
+    }
+
+    .contain{
+         display: grid;
+         grid-template-areas: " hr hr hr hr";
+         gap: 10px;
+    }
+    .calculator span {
+     
+      background-color: aqua;
+      padding: 5%;
+      text-align: center;
+      margin: 2px;
+      font-size: 18px;
+      
+    }
+
+   
+
+
+  </style>
+</head>
+<body>
+  <div class="calculator">
+    <div class="result" id="result">0</div>
+ <div class="contain">
+    <span onclick="addToResult('7') ">7</span>
+    <span onclick="addToResult('8')">8</span>
+    <span onclick="addToResult('9')">9</span>
+    <span onclick="addToResult('+')" class="operator">+</span>
+
+    <span onclick="addToResult('4')">4</span>
+    <span onclick="addToResult('5')">5</span>
+    <span onclick="addToResult('6')">6</span>
+    <span onclick="addToResult('-')" class="operator">-</span>
+
+    <span onclick="addToResult('1')">1</span>
+    <span onclick="addToResult('2')">2</span>
+    <span onclick="addToResult('3')">3</span>
+    <span onclick="addToResult('*')" class="operator">*</span>
+
+    <span onclick="clearResult()">C</span>
+    <span onclick="addToResult('0')">0</span>
+    <span onclick="calculateResult()">=</span>
+    <span onclick="addToResult('/')" class="operator">/</button>
+  </div>
+</div>
+  <script>
+    function addToResult(value) {
+      var result = document.getElementById("result");
+      if (result.innerHTML === "0") {
+        result.innerHTML = value;
+      } else {
+        result.innerHTML += value;
+      }
+    }
+
+    function clearResult() {
+      document.getElementById("result").innerHTML = "0";
+    }
+
+    function calculateResult() {
+      var result = eval(document.getElementById("result").innerHTML);
+      document.getElementById("result").innerHTML = result;
+    }
+  </script>
+</body>
+</html>
