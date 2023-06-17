@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XHR</title>
+</head>
+<body>
+    
+</body>
+ <script>
+    const URL ="https://jsonplaceholder.typicode.com/posts";
+
+    const xhr = new XMLHttpRequest();
+    // console.log(xhr);
+    
+    xhr.open('GET',URL);
+
+  
+
+    xhr.onreadystatechange =function(){
+        console.log(xhr);
+    }
+    
+    xhr.send();
+
+ </script>
+</html>

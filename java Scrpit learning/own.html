@@ -4,9 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        button{
+            width: 100px;
+            height: 50px;
+            color: aliceblue;
+            font-size: larger;
+            background-color: darkolivegreen;
+        }  
+    </style>
 </head>
 <body>
+    <button onclick="goback()" >Go Back</button>
     
 </body>
- <script src="newkeyword.js"></script>
+ <script>
+  
+    alert("hii");
+
+    if(confirm("want to visit youTube")){
+        location.href ="https://www.youtube.com/";
+    }
+
+    function goback(){
+        window.history.back();
+    }
+ </script>
 </html>

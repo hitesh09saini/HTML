@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fetch Api</title>
+    <style>
+
+       *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+       }
+      body{
+        flex-direction: column;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100vw;
+        height: 100vh;
+        gap: 50px;
+      }
+
+      .containt{
+        padding: 50px;
+        width: 40%;
+        height: 60%;
+        border-radius: 10%;
+        box-shadow: inset -5px 0px 10px -5px black;
+      }
+      div{
+        margin: 10px;
+      }
+    </style>
+</head>
+<body>
+      <h1>Today Weather</h1>
+    
+    <div  class="containt" id="contain">
+        <div id="temp"></div>
+        <div id="wind"></div>
+        <div id="wea"></div>
+    </div>
+   
+ 
+    <script>
+
+         let p = fetch('');
+         let t ;
+         let w ;
+         let d ;
+
+         p.then((a)=>{
+             return a.json();
+         }).then((v)=>{
+           t= v.temperature;
+           w =v.wind;
+           d = v.description;
+           app(v.temperature,w,d);
+         })
+
+         const box = document.getElementById('contain');
+         const temp= document.getElementById('temp');
+         const wind = document.getElementById('wind');
+         const wea = document.getElementById('wea');
+         
+         
+         
+         function app( t ,w ,d){
+           
+              temp.innerHTML= t;
+              wind.innerText = w;
+              console.log(d);
+
+              switch(d){
+                case 'Sunny':
+                 
+                break;
+                case 'Cloudy':
+
+                break;
+                case 'Rainy':
+
+                break;
+
+                case 'Foggy':
+
+                break;
+
+                case 'Winter':
+
+                break;
+
+                default:  wea.innerText = "Error";
+                  
+              }
+         }
+
+
+
+    </script>
+</body>
+</html>

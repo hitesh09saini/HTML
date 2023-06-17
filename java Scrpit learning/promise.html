@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let e = new Error("Error");
+
+    let p= new Promise((resolve ,reject)=> {
+      console.log("promise is pending");
+      setTimeout(()=>{
+        console.log("problem is resolve");
+        // reject(e);
+        resolve(2);
+
+     },4000);
+    });
+
+    p.then((v)=>{
+        console.log(v*2);
+    })
+
+    </script>
+</body>
+</html>
